@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Worlds 2004 Standard Metagame</title><style>
+:root{
+ --bg:#071012;--panel:#101b1e;--panel2:#16262a;--ink:#eef3f0;--muted:#a9b7b2;
+ --line:#315057;--bronze:#cf9d5b;--cyan:#69c4cc;--green:#8ac78e;--red:#d77f6f;
+ --max:1220px;--radius:18px;--shadow:0 18px 48px rgba(0,0,0,.42);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:
+ radial-gradient(circle at 10% -10%,rgba(60,146,156,.19),transparent 34rem),
+ radial-gradient(circle at 92% 8%,rgba(184,111,58,.13),transparent 28rem),var(--bg);
+ color:var(--ink);font:16.5px/1.68 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#8bdde4;text-underline-offset:.17em}a:hover{color:#d6fbff}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.12;margin:0 0 .55em}
+h1{font-size:clamp(2.8rem,7vw,6.5rem);letter-spacing:-.045em}
+h2{font-size:clamp(2rem,4vw,3.45rem);letter-spacing:-.025em;border-bottom:1px solid var(--line);padding-bottom:12px}
+h3{font-size:1.45rem;margin-top:1.65em}h4{font-size:1.1rem}
+p{margin:.82em 0}.small,.note{font-size:.88rem;color:var(--muted)}
+.hero{min-height:72vh;position:relative;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:
+ linear-gradient(90deg,rgba(3,9,10,.97),rgba(3,9,10,.72) 48%,rgba(3,9,10,.25) 80%,rgba(3,9,10,.54)),
+ linear-gradient(0deg,var(--bg),transparent 56%),var(--hero) center 30%/cover no-repeat;filter:saturate(.78) contrast(1.08)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background-image:
+ linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(#000,transparent 82%)}
+.hero-inner,.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.hero-inner{padding:92px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:var(--bronze);font-weight:850;font-size:.78rem}
+.dek{max-width:850px;color:#d9e2df;font-size:clamp(1.05rem,2vw,1.35rem)}
+.archive-link{display:inline-flex;margin-bottom:25px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(4,11,12,.68);text-decoration:none;color:#e9f3ef;font-size:.82rem;font-weight:800}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px;background:rgba(6,13,14,.72);font-size:.84rem}
+.layout{width:min(var(--max),calc(100% - 36px));margin:40px auto 85px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:42px}
+.toc{position:sticky;top:20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(16,27,30,.93);padding:18px;max-height:calc(100vh - 40px);overflow:auto;box-shadow:var(--shadow)}
+.toc strong{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--bronze);margin-bottom:8px}
+.toc a{display:block;text-decoration:none;color:var(--muted);padding:7px 8px;border-radius:8px;font-size:.9rem;line-height:1.25}.toc a:hover{background:var(--panel2);color:white}
+main{min-width:0;max-width:100%}section{margin-bottom:58px;scroll-margin-top:24px}
+.callout{padding:19px 21px;border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:0 var(--radius) var(--radius) 0;background:linear-gradient(135deg,rgba(207,157,91,.1),rgba(105,196,204,.04));margin:22px 0}
+.grid2,.grid3{display:grid;gap:17px;margin:20px 0}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:19px;box-shadow:0 12px 30px rgba(0,0,0,.16)}.card h3,.card h4{margin-top:0}
+.art-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:23px 0}.art-grid figure{margin:0;border:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}.art-grid img{display:block;width:100%;aspect-ratio:1.25/1;object-fit:cover}.art-grid figcaption{padding:9px 11px;color:var(--muted);font-size:.78rem}
+.deck{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;margin:17px 0}
+.deck summary{cursor:pointer;list-style:none;padding:17px 19px;display:flex;justify-content:space-between;gap:18px;align-items:center;background:linear-gradient(90deg,rgba(105,196,204,.09),rgba(207,157,91,.06))}
+.deck summary::-webkit-details-marker{display:none}.deck summary strong{font-family:Georgia,serif;font-size:1.12rem}.deck summary small{display:block;color:var(--muted);margin-top:3px}
+.plus{font-size:1.5rem;color:var(--bronze);transition:.2s}.deck[open] .plus{transform:rotate(45deg)}
+.deck-body{padding:0 19px 19px}.deck-meta{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin:16px 0}
+.copy{border:1px solid #527079;border-radius:9px;background:#193238;color:#fff;padding:8px 11px;font-weight:750;cursor:pointer}.copy:hover{background:#24464e}
+.deck-columns{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#060d0e}
+.deck-col{padding:18px}.deck-col+.deck-col{border-left:1px solid var(--line)}
+.group{margin-bottom:18px}.group h4{font:800 .76rem/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.11em;color:var(--bronze);margin:0 0 8px}
+.row{padding:3px 0;border-bottom:1px dotted rgba(255,255,255,.08)}.qty{display:inline-block;min-width:1.45em;color:var(--cyan);font-variant-numeric:tabular-nums}
+.card-name{border-bottom:1px dotted rgba(255,255,255,.35);cursor:help;outline:none}.card-name:hover,.card-name:focus{color:white;border-color:var(--bronze)}
+.table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);margin:20px 0}
+table{border-collapse:collapse;width:100%;min-width:760px;background:var(--panel)}th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#173038;text-transform:uppercase;letter-spacing:.07em;font-size:.75rem}
+.list-clean{padding-left:1.2em}.list-clean li{margin:.55em 0}
+#preview{position:fixed;z-index:9999;width:min(305px,72vw);opacity:0;pointer-events:none;transform:translateY(6px) scale(.98);transition:.12s;filter:drop-shadow(0 18px 30px rgba(0,0,0,.65))}
+#preview.show{opacity:1;transform:translateY(0) scale(1)}#preview img{width:100%;max-height:88vh;object-fit:contain;border-radius:4.8%;background:#111}
+.footer{border-top:1px solid var(--line);padding:28px 18px 45px;text-align:center;color:var(--muted);font-size:.84rem}
+.searchbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:20px 0}.searchbar input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#081113;color:white;font:inherit}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.archetype-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.16)}.archetype-card:hover{transform:translateY(-2px);border-color:#5d7a81}.archetype-art{height:150px;background-position:center;background-size:cover;position:relative}.archetype-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--panel),transparent 65%)}.archetype-copy{padding:17px}.archetype-copy h3{margin:0 0 6px}.tag{color:var(--bronze);text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:800}
+@media(max-width:930px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:1fr}.art-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){body{font-size:16px}.hero{min-height:64vh}.hero-inner,.wrap,.layout{width:min(100% - 24px,var(--max))}.grid2,.cards,.deck-columns{grid-template-columns:1fr}.deck-col+.deck-col{border-left:0;border-top:1px solid var(--line)}.art-grid{grid-template-columns:1fr}.deck-meta{flex-direction:column}#preview{width:min(280px,78vw);left:50%!important;top:50%!important;transform:translate(-50%,-46%) scale(.98)}#preview.show{transform:translate(-50%,-50%) scale(1)}}
+</style></head>
+<body><header class="hero" style="--hero:url('https://api.scryfall.com/cards/named?exact=Arcbound%20Ravager&format=image&version=art_crop')"><div class="hero-inner"><a class="archive-link" href="index.html">← World Between Worlds 2004 Archive</a><div class="eyebrow">Format guide</div><h1>The Worlds 2004 Standard Metagame</h1><p class="dek">Affinity defined every deck-building decision, but the successful field contained multiple radically different ways to exploit an artifact-heavy format.</p></div></header>
+<div class="layout"><nav class="toc"><strong>Contents</strong><a href="#standings">Published Standard leaders</a><a href="#pillars">The pillars</a><a href="#tension">The central metagame tension</a><a href="#rotation">A disappearing environment</a></nav><main><section id="standings"><div class="eyebrow">Worlds 2004 Standard</div><h2>Published Standard leaders</h2><div class="table-wrap"><table><thead><tr><th>Record</th><th>Player</th><th>Archetype</th></tr></thead><tbody><tr><td>6–0</td><td>Sasha Zorc</td><td>Tooth and Nail</td></tr><tr><td>6–0</td><td>Bruno Carvalho</td><td>Green-White Slide</td></tr><tr><td>6–0</td><td>Manuel Bevand</td><td>KCI / Myr Incubator</td></tr><tr><td>6–0</td><td>Antoine Ruel</td><td>Big Red</td></tr><tr><td>6–0</td><td>Andrei Häyrynen</td><td>Affinity</td></tr><tr><td>5–1</td><td>Aeo Paquette</td><td>Affinity</td></tr><tr><td>5–1</td><td>Marco Blume</td><td>U/R March</td></tr><tr><td>5–1</td><td>Olivier Ruel</td><td>G/W Control</td></tr><tr><td>5–1</td><td>Brock Parker</td><td>Goblins</td></tr><tr><td>5–1</td><td>Tsuyoshi Fujita</td><td>Mono-Red Land Destruction</td></tr><tr><td>5–1</td><td>William Jensen</td><td>Goblins</td></tr><tr><td>5–1</td><td>Katsuhiro Mori</td><td>U/W Control</td></tr><tr><td>5–1</td><td>Jan Škampa</td><td>Tooth and Nail</td></tr><tr><td>5–1</td><td>Lars Dam</td><td>U/R March</td></tr><tr><td>5–1</td><td>Kamiel Cornelissen</td><td>Vial Affinity</td></tr><tr><td>5–1</td><td>Andre Müller</td><td>G/W Slide</td></tr><tr><td>5–1</td><td>Chang Chua</td><td>Affinity</td></tr><tr><td>5–1</td><td>Sebastian Gulinski</td><td>Vial Affinity</td></tr><tr><td>5–1</td><td>Craig Krempels</td><td>U/R March</td></tr></tbody></table></div></section><section id="pillars"><div class="eyebrow">Worlds 2004 Standard</div><h2>The pillars</h2><div class='grid3'><div class='card'><h3>Affinity</h3><p>The fastest and most flexible deck. Every sideboard began by answering artifact lands, Ravager, Disciple, and Plating.</p></div><div class='card'><h3>Anti-Affinity control</h3><p>Slide, U/W, G/W, Big Red, and March all played large amounts of artifact removal and sweepers.</p></div><div class='card'><h3>Mana engines</h3><p>Tooth and Nail and KCI punished opponents who overloaded on one-for-one artifact hate or slow control cards.</p></div></div></section><section id="tension"><div class="eyebrow">Worlds 2004 Standard</div><h2>The central metagame tension</h2><p>A deck had to beat Affinity without becoming helpless against decks designed to beat Affinity. Nuijten's Slide and Nassif's U/W list succeeded because their artifact answers were attached to broader engines: Viridian Shaman could be reused, Annul still hit important combo pieces, and sweepers remained valuable against Goblins.</p></section><section id="rotation"><div class="eyebrow">Worlds 2004 Standard</div><h2>A disappearing environment</h2><p>Champions of Kamigawa arrived less than a month later and rotated the Onslaught block. Astral Slide, Goblin Piledriver, Eternal Dragon, Decree of Justice, and the cycling lands left Standard, so this exact format existed only briefly.</p></section></main></div><footer class="footer">Worlds 2004 Standard Archive · Independent historical project.</footer></body></html>

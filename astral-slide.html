@@ -1,0 +1,231 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Green-White Astral Slide — Worlds 2004 Standard Archive</title><style>
+:root{
+ --bg:#071012;--panel:#101b1e;--panel2:#16262a;--ink:#eef3f0;--muted:#a9b7b2;
+ --line:#315057;--bronze:#cf9d5b;--cyan:#69c4cc;--green:#8ac78e;--red:#d77f6f;
+ --max:1220px;--radius:18px;--shadow:0 18px 48px rgba(0,0,0,.42);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:
+ radial-gradient(circle at 10% -10%,rgba(60,146,156,.19),transparent 34rem),
+ radial-gradient(circle at 92% 8%,rgba(184,111,58,.13),transparent 28rem),var(--bg);
+ color:var(--ink);font:16.5px/1.68 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#8bdde4;text-underline-offset:.17em}a:hover{color:#d6fbff}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.12;margin:0 0 .55em}
+h1{font-size:clamp(2.8rem,7vw,6.5rem);letter-spacing:-.045em}
+h2{font-size:clamp(2rem,4vw,3.45rem);letter-spacing:-.025em;border-bottom:1px solid var(--line);padding-bottom:12px}
+h3{font-size:1.45rem;margin-top:1.65em}h4{font-size:1.1rem}
+p{margin:.82em 0}.small,.note{font-size:.88rem;color:var(--muted)}
+.hero{min-height:72vh;position:relative;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:
+ linear-gradient(90deg,rgba(3,9,10,.97),rgba(3,9,10,.72) 48%,rgba(3,9,10,.25) 80%,rgba(3,9,10,.54)),
+ linear-gradient(0deg,var(--bg),transparent 56%),var(--hero) center 30%/cover no-repeat;filter:saturate(.78) contrast(1.08)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background-image:
+ linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(#000,transparent 82%)}
+.hero-inner,.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.hero-inner{padding:92px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:var(--bronze);font-weight:850;font-size:.78rem}
+.dek{max-width:850px;color:#d9e2df;font-size:clamp(1.05rem,2vw,1.35rem)}
+.archive-link{display:inline-flex;margin-bottom:25px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(4,11,12,.68);text-decoration:none;color:#e9f3ef;font-size:.82rem;font-weight:800}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px;background:rgba(6,13,14,.72);font-size:.84rem}
+.layout{width:min(var(--max),calc(100% - 36px));margin:40px auto 85px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:42px}
+.toc{position:sticky;top:20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(16,27,30,.93);padding:18px;max-height:calc(100vh - 40px);overflow:auto;box-shadow:var(--shadow)}
+.toc strong{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--bronze);margin-bottom:8px}
+.toc a{display:block;text-decoration:none;color:var(--muted);padding:7px 8px;border-radius:8px;font-size:.9rem;line-height:1.25}.toc a:hover{background:var(--panel2);color:white}
+main{min-width:0;max-width:100%}section{margin-bottom:58px;scroll-margin-top:24px}
+.callout{padding:19px 21px;border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:0 var(--radius) var(--radius) 0;background:linear-gradient(135deg,rgba(207,157,91,.1),rgba(105,196,204,.04));margin:22px 0}
+.grid2,.grid3{display:grid;gap:17px;margin:20px 0}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:19px;box-shadow:0 12px 30px rgba(0,0,0,.16)}.card h3,.card h4{margin-top:0}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(165px,100%),1fr));gap:14px;margin:23px 0;max-width:100%;overflow:hidden;align-items:start}.art-grid figure{margin:0;min-width:0;width:100%;max-width:245px;justify-self:center;border:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}.art-grid img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:488/680;object-fit:contain;background:#081012}.art-grid figcaption{padding:9px 11px;color:var(--muted);font-size:.78rem;text-align:center}
+.deck{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;margin:17px 0}
+.deck summary{cursor:pointer;list-style:none;padding:17px 19px;display:flex;justify-content:space-between;gap:18px;align-items:center;background:linear-gradient(90deg,rgba(105,196,204,.09),rgba(207,157,91,.06))}
+.deck summary::-webkit-details-marker{display:none}.deck summary strong{font-family:Georgia,serif;font-size:1.12rem}.deck summary small{display:block;color:var(--muted);margin-top:3px}
+.plus{font-size:1.5rem;color:var(--bronze);transition:.2s}.deck[open] .plus{transform:rotate(45deg)}
+.deck-body{padding:0 19px 19px}.deck-meta{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin:16px 0}
+.copy{border:1px solid #527079;border-radius:9px;background:#193238;color:#fff;padding:8px 11px;font-weight:750;cursor:pointer}.copy:hover{background:#24464e}
+.deck-columns{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#060d0e}
+.deck-col{padding:18px}.deck-col+.deck-col{border-left:1px solid var(--line)}
+.group{margin-bottom:18px}.group h4{font:800 .76rem/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.11em;color:var(--bronze);margin:0 0 8px}
+.row{padding:3px 0;border-bottom:1px dotted rgba(255,255,255,.08)}.qty{display:inline-block;min-width:1.45em;color:var(--cyan);font-variant-numeric:tabular-nums}
+.card-name{border-bottom:1px dotted rgba(255,255,255,.35);cursor:help;outline:none}.card-name:hover,.card-name:focus{color:white;border-color:var(--bronze)}
+.table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);margin:20px 0}
+table{border-collapse:collapse;width:100%;min-width:760px;background:var(--panel)}th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#173038;text-transform:uppercase;letter-spacing:.07em;font-size:.75rem}
+.list-clean{padding-left:1.2em}.list-clean li{margin:.55em 0}
+#preview{position:fixed;z-index:9999;width:min(305px,72vw);opacity:0;pointer-events:none;transform:translateY(6px) scale(.98);transition:.12s;filter:drop-shadow(0 18px 30px rgba(0,0,0,.65))}
+#preview.show{opacity:1;transform:translateY(0) scale(1)}#preview img{width:100%;max-height:88vh;object-fit:contain;border-radius:4.8%;background:#111}
+.footer{border-top:1px solid var(--line);padding:28px 18px 45px;text-align:center;color:var(--muted);font-size:.84rem}
+.searchbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:20px 0}.searchbar input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#081113;color:white;font:inherit}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.archetype-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.16)}.archetype-card:hover{transform:translateY(-2px);border-color:#5d7a81}.archetype-art{height:150px;background-position:center;background-size:cover;position:relative}.archetype-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--panel),transparent 65%)}.archetype-copy{padding:17px}.archetype-copy h3{margin:0 0 6px}.tag{color:var(--bronze);text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:800}
+@media(max-width:930px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:1fr}}
+@media(max-width:650px){body{font-size:16px}.hero{min-height:64vh}.hero-inner,.wrap,.layout{width:min(100% - 24px,var(--max))}.grid2,.cards,.deck-columns{grid-template-columns:1fr}.deck-col+.deck-col{border-left:0;border-top:1px solid var(--line)}.art-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr));gap:10px}.art-grid figure{max-width:220px}.deck-meta{flex-direction:column}#preview{width:min(280px,78vw);left:50%!important;top:50%!important;transform:translate(-50%,-46%) scale(.98)}#preview.show{transform:translate(-50%,-50%) scale(1)}}
+
+.lead{font-size:1.16rem;color:#dce7e3}.dropcap:first-letter{float:left;font-family:Georgia,serif;font-size:4.2rem;line-height:.78;padding:.12em .12em 0 0;color:var(--bronze)}
+.design-grid,.phase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}.design-grid .card,.phase-grid .card{height:100%}
+.timeline{position:relative;margin:28px 0;padding-left:29px}.timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--bronze),var(--green))}.event{position:relative;margin:0 0 26px}.event:before{content:"";position:absolute;left:-28px;top:.5em;width:13px;height:13px;border:3px solid var(--bronze);background:var(--bg);border-radius:50%}.date{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:850;color:var(--bronze)}
+.split-list{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:20px 0}.good{border-left:4px solid var(--green)}.bad{border-left:4px solid var(--red)}
+.numbered{counter-reset:item;display:grid;gap:13px;margin:20px 0}.numbered .card{position:relative;padding-left:58px}.numbered .card:before{counter-increment:item;content:counter(item);position:absolute;left:18px;top:17px;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:rgba(207,157,91,.15);color:var(--bronze);font-weight:900}
+.role{display:inline-block;padding:3px 8px;border-radius:999px;background:rgba(105,196,204,.12);color:#bcebf0;font-size:.73rem;font-weight:800;white-space:nowrap}.source-list{padding-left:1.25em}.source-list li{margin:.75em 0}.source-list span{display:block;color:var(--muted);font-size:.88rem}.recommend{border-left-color:var(--green)}
+@media(max-width:700px){.design-grid,.phase-grid,.split-list{grid-template-columns:1fr}}
+.toc a.active{background:var(--panel2);color:white}</style></head><body>
+<header class="hero" style="--hero:url('https://api.scryfall.com/cards/named?exact=Astral%20Slide&format=image&version=art_crop')"><div class="hero-inner"><a class="archive-link" href="index.html">← World Between Worlds 2004 Archive</a><div class="eyebrow">Long-form archetype dossier · September 2004 Standard</div><h1>Green-White Astral Slide</h1><p class="dek">Cycle at instant speed, turn creatures into reusable spells, and make combat and removal operate on your terms.</p><div class="meta"><span class="pill">Control / Engine</span><span class="pill">Onslaught–Fifth Dawn Standard</span><span class="pill">Period decklists and rules</span></div></div></header>
+<div class="layout"><nav class="toc"><strong>Table of contents</strong><a href="#scope">Scope of this guide</a><a href="#identity">1. Cover and deck identity</a><a href="#what-it-does">2. What this deck does</a><a href="#history">3. History and evolution</a><a href="#decklists">4. Historical decklists and recommended 75</a><a href="#mulligans">5. Mulligans and opening turns</a><a href="#interactions">6. Key interactions</a><a href="#piloting">7. How to pilot the deck</a><a href="#sideboarding">8. Sideboarding principles</a><a href="#matchups">9. Gauntlet-specific matchup guide</a><a href="#sources">10. Historical notes and sources</a></nav><main>
+<section id="scope"><div class="callout"><b>Scope.</b> This dossier follows Astral Slide from the Onslaught cycling-control family through the green-white Eternal Witness configuration that won Worlds. The focus is the post-Skullclamp, pre-Champions environment played in San Francisco.</div></section>
+<section id="identity"><div class="eyebrow">1 · Cover and deck identity</div><h2>Green-White Astral Slide</h2><p class="lead dropcap">Astral Slide is not simply a blink deck. It is a control engine whose interaction is stored inside otherwise ordinary cycling cards. Once Slide is active, every cycled Renewed Faith or cycling land becomes a temporary removal spell, a protection spell, or a way to reuse Eternal Witness and Viridian Shaman.</p><p class="lead ">The Worlds build was designed for a format in which Affinity forced opponents to devote enormous space to artifacts. Green converted that burden into card advantage: Viridian Shaman destroyed an artifact and then could be slid out and returned; Eternal Witness recycled Wrath, Oxidize, Plow Under, Decree, or another cycling card.</p><div class="design-grid"><div class="card"><h3>Engine over rate</h3><p>Many cards are individually modest. Slide converts them into a repeatable interaction system.</p></div><div class="card"><h3>Answers attached to bodies</h3><p>Viridian Shaman and Eternal Witness remain useful after their first trigger because Slide can reset them.</p></div><div class="card"><h3>Redundant late games</h3><p>Eternal Dragon recursion, Decree tokens, Witness loops, and post-board Rude Awakening all close differently.</p></div><div class="card"><h3>Metagame compression</h3><p>Wrath and Akroma’s Vengeance answer creatures, artifact lands, equipment, and token armies without narrow one-for-one trades.</p></div></div><div class="art-grid"><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Astral%20Slide&format=image&version=normal" alt="Astral Slide"><figcaption><b>Astral Slide</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Eternal%20Witness&format=image&version=normal" alt="Eternal Witness"><figcaption><b>Eternal Witness</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Viridian%20Shaman&format=image&version=normal" alt="Viridian Shaman"><figcaption><b>Viridian Shaman</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Decree%20of%20Justice&format=image&version=normal" alt="Decree of Justice"><figcaption><b>Decree of Justice</b></figcaption></figure></div></section>
+<section id="what-it-does"><div class="eyebrow">2 · What this deck does</div><h2>The strategic machine</h2><div class="phase-grid"><div class="card"><h3>Turns 1–2: build colors</h3><p>Cycle lands when necessary, Rampant Growth toward double white, and avoid spending cycling cards without a reason if Slide is likely to matter.</p></div><div class="card"><h3>Turns 3–4: establish the engine</h3><p>Resolve Astral Slide or deploy Shaman/Witness while preserving enough mana to cycle during combat.</p></div><div class="card"><h3>Turns 4–7: reset the board</h3><p>Wrath or Vengeance after extracting value from creatures. Use Slide to protect your own creatures or deny opposing modular, equipment, and combat damage.</p></div><div class="card"><h3>Late game: recur inevitability</h3><p>Eternal Dragon, Decree of Justice, repeated Witness triggers, and post-board Plow Under make ordinary topdecking unfavorable for the opponent.</p></div></div></section>
+<section id="history"><div class="eyebrow">3 · History and evolution</div><h2>How the archetype reached Worlds</h2><div class="timeline"><div class="event"><div class="date">2002–2003</div><h3>The cycling engine appears</h3><p>Onslaught supplied Astral Slide, Lightning Rift, cycling lands, and a critical mass of cyclers. Early Standard versions were commonly red-white or three-color and used Slide as anti-creature control.</p></div><div class="event"><div class="date">Early 2004</div><h3>The format becomes artifact-centered</h3><p>Mirrodin and Darksteel made Affinity the deck to beat. Slide already punished creature decks, but its removal suite had to expand toward artifacts and much faster openings.</p></div><div class="event"><div class="date">June 2004</div><h3>Skullclamp is banned</h3><p>Affinity loses its most abusive draw engine, but Ravager, Disciple, artifact lands, and free creatures remain. Slide can now trade resources without being buried as quickly by Clamp.</p></div><div class="event"><div class="date">Fifth Dawn summer</div><h3>Green becomes the defining splash</h3><p>Eternal Witness gives Slide a recursive engine, while Viridian Shaman and Oxidize turn the Affinity matchup into the deck’s central selling point.</p></div><div class="event"><div class="date">Worlds 2004</div><h3>Nuijten converts the metagame call</h3><p>Julien Nuijten defeats Aeo Paquette’s Affinity in the final. Other successful pilots demonstrate Exalted Angel, Gilded Light, Duplicant, and Sundering Titan branches.</p></div><div class="event"><div class="date">October 2004</div><h3>Rotation ends this exact form</h3><p>Champions of Kamigawa rotates Onslaught block, removing Slide, Eternal Dragon, Decree, and the cycling lands from Standard.</p></div></div></section>
+<section id="decklists"><div class="eyebrow">4 · Historical decklists and recommended 75</div><h2>Registered tournament lists</h2><div class="callout recommend"><b>Recommended gauntlet configuration.</b> Julien Nuijten’s championship 75 is the default gauntlet list. Bruno Carvalho’s undefeated configuration is the best alternate when you want maindeck Oxidize and a faster Exalted Angel plan.</div><p>Select or tap any card name for a full-card preview. Each registered 75 can be copied independently.</p><details class="deck" open>
+ <summary><span><strong>Julien Nuijten — Green-White Astral Slide</strong><small>World Champion; 4–2 in Standard · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>The championship list was built to punish Affinity while retaining inevitability against the control decks designed to beat Affinity.</p>
+  <div class="deck-meta"><div><b>Julien Nuijten</b><div class="small">World Champion; 4–2 in Standard · September 1–5, 2004</div></div><button class="copy" data-target="deck-0">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 12</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Viridian Shaman">Viridian Shaman</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Eternal Witness">Eternal Witness</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Eternal Dragon">Eternal Dragon</span></div></div><div class="group"><h4>Enchantments · 4</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Astral Slide">Astral Slide</span></div></div><div class="group"><h4>Instants · 6</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Renewed Faith">Renewed Faith</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Wing Shards">Wing Shards</span></div></div><div class="group"><h4>Sorceries · 13</h4><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Akroma&#x27;s Vengeance">Akroma&#x27;s Vengeance</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Decree of Justice">Decree of Justice</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Plow Under">Plow Under</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Rampant Growth">Rampant Growth</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Wrath of God">Wrath of God</span></div></div><div class="group"><h4>Lands · 25</h4><div class="row"><span class="qty">7</span><span class="card-name" tabindex="0" data-card="Forest">Forest</span></div><div class="row"><span class="qty">6</span><span class="card-name" tabindex="0" data-card="Plains">Plains</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Secluded Steppe">Secluded Steppe</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Tranquil Thicket">Tranquil Thicket</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Windswept Heath">Windswept Heath</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Oxidize">Oxidize</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Rude Awakening">Rude Awakening</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Scrabbling Claws">Scrabbling Claws</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Circle of Protection: Red">Circle of Protection: Red</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Plow Under">Plow Under</span></div></div></div></div>
+  <pre id="deck-0" hidden>Julien Nuijten — Green-White Astral Slide
+World Champion; 4–2 in Standard — 2004 World Championships, San Francisco (September 1–5, 2004)
+
+Creatures · 12
+4 Viridian Shaman
+4 Eternal Witness
+4 Eternal Dragon
+
+Enchantments · 4
+4 Astral Slide
+
+Instants · 6
+4 Renewed Faith
+2 Wing Shards
+
+Sorceries · 13
+2 Akroma&#x27;s Vengeance
+2 Decree of Justice
+1 Plow Under
+4 Rampant Growth
+4 Wrath of God
+
+Lands · 25
+7 Forest
+6 Plains
+4 Secluded Steppe
+4 Tranquil Thicket
+4 Windswept Heath
+
+Sideboard · 15
+4 Oxidize
+2 Rude Awakening
+3 Scrabbling Claws
+3 Circle of Protection: Red
+3 Plow Under</pre>
+  <p class="small">Source: <a href="https://mtg.fandom.com/wiki/World_Championship_Decks/2004">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Bruno Carvalho — Green-White Slide</strong><small>6–0 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>Carvalho&#x27;s undefeated list moved Oxidize into the maindeck and used Exalted Angel as a faster stabilizing threat.</p>
+  <div class="deck-meta"><div><b>Bruno Carvalho</b><div class="small">6–0 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-1">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 10</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Eternal Dragon">Eternal Dragon</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Exalted Angel">Exalted Angel</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Eternal Witness">Eternal Witness</span></div></div><div class="group"><h4>Spells · 25</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Wrath of God">Wrath of God</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Akroma&#x27;s Vengeance">Akroma&#x27;s Vengeance</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Rampant Growth">Rampant Growth</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Astral Slide">Astral Slide</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Renewed Faith">Renewed Faith</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Gilded Light">Gilded Light</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Decree of Justice">Decree of Justice</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Oxidize">Oxidize</span></div></div><div class="group"><h4>Lands · 25</h4><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Windswept Heath">Windswept Heath</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Temple of the False God">Temple of the False God</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Tranquil Thicket">Tranquil Thicket</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Secluded Steppe">Secluded Steppe</span></div><div class="row"><span class="qty">7</span><span class="card-name" tabindex="0" data-card="Forest">Forest</span></div><div class="row"><span class="qty">6</span><span class="card-name" tabindex="0" data-card="Plains">Plains</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Plow Under">Plow Under</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Sacred Ground">Sacred Ground</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Circle of Protection: Red">Circle of Protection: Red</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Purge">Purge</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Wing Shards">Wing Shards</span></div></div></div></div>
+  <pre id="deck-1" hidden>Bruno Carvalho — Green-White Slide
+6–0 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Creatures · 10
+3 Eternal Dragon
+3 Exalted Angel
+4 Eternal Witness
+
+Spells · 25
+4 Wrath of God
+2 Akroma&#x27;s Vengeance
+3 Rampant Growth
+4 Astral Slide
+4 Renewed Faith
+2 Gilded Light
+2 Decree of Justice
+4 Oxidize
+
+Lands · 25
+2 Windswept Heath
+2 Temple of the False God
+4 Tranquil Thicket
+4 Secluded Steppe
+7 Forest
+6 Plains
+
+Sideboard · 15
+4 Plow Under
+3 Sacred Ground
+3 Circle of Protection: Red
+3 Purge
+2 Wing Shards</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Andre Müller — Green-White Slide</strong><small>5–1 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>A heavier creature toolbox that used Slide to reuse Duplicant, Viridian Shaman, Witness, and Sundering Titan.</p>
+  <div class="deck-meta"><div><b>Andre Müller</b><div class="small">5–1 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-2">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 14</h4><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Duplicant">Duplicant</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Solemn Simulacrum">Solemn Simulacrum</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Sundering Titan">Sundering Titan</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Eternal Witness">Eternal Witness</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Viridian Shaman">Viridian Shaman</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Eternal Dragon">Eternal Dragon</span></div></div><div class="group"><h4>Spells · 21</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Rampant Growth">Rampant Growth</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Akroma&#x27;s Vengeance">Akroma&#x27;s Vengeance</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Astral Slide">Astral Slide</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Gilded Light">Gilded Light</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Renewed Faith">Renewed Faith</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Wrath of God">Wrath of God</span></div></div><div class="group"><h4>Lands · 25</h4><div class="row"><span class="qty">6</span><span class="card-name" tabindex="0" data-card="Forest">Forest</span></div><div class="row"><span class="qty">5</span><span class="card-name" tabindex="0" data-card="Plains">Plains</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Secluded Steppe">Secluded Steppe</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Temple of the False God">Temple of the False God</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Tranquil Thicket">Tranquil Thicket</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Windswept Heath">Windswept Heath</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Sundering Titan">Sundering Titan</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Relic Barrier">Relic Barrier</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Creeping Mold">Creeping Mold</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Oxidize">Oxidize</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Plow Under">Plow Under</span></div></div></div></div>
+  <pre id="deck-2" hidden>Andre Müller — Green-White Slide
+5–1 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Creatures · 14
+1 Duplicant
+2 Solemn Simulacrum
+1 Sundering Titan
+4 Eternal Witness
+3 Viridian Shaman
+3 Eternal Dragon
+
+Spells · 21
+4 Rampant Growth
+2 Akroma&#x27;s Vengeance
+4 Astral Slide
+3 Gilded Light
+4 Renewed Faith
+4 Wrath of God
+
+Lands · 25
+6 Forest
+5 Plains
+4 Secluded Steppe
+2 Temple of the False God
+4 Tranquil Thicket
+4 Windswept Heath
+
+Sideboard · 15
+1 Sundering Titan
+4 Relic Barrier
+2 Creeping Mold
+4 Oxidize
+4 Plow Under</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details></section>
+<section id="mulligans"><div class="eyebrow">5 · Mulligans and opening turns</div><h2>Keep a plan, not a collection of powerful cards</h2><div class="split-list"><div class="card good"><h3>Strong keeps</h3><ul><li>Two or three lands with green and double-white access, plus Rampant Growth or early cycling.</li><li>Astral Slide with at least one cheap cycler and a realistic path to four mana.</li><li>Against Affinity, Viridian Shaman or Oxidize plus a sweeper and functional mana.</li><li>Against slow decks, Eternal Witness, cycling lands, and either Plow Under or a resilient finisher.</li></ul></div><div class="card bad"><h3>Common mulligans</h3><ul><li>Hands whose only early action is a seven-mana spell.</li><li>One-land hands that depend on cycling into both lands and colors.</li><li>Hands full of creature removal but no artifact interaction against known Affinity.</li><li>Multiple Eternal Dragons without enough early mana or cycling to survive.</li></ul></div></div><h3>Opening-turn priorities</h3><div class="table-wrap"><table><thead><tr><th>Context</th><th>Preferred sequence</th></tr></thead><tbody><tr><td><b>Unknown opponent</b></td><td>Prioritize a green source, Rampant Growth, and a cycling land. Preserve Renewed Faith until its life or Slide trigger matters.</td></tr><tr><td><b>Affinity</b></td><td>Use Oxidize/Shaman early enough to interrupt Plating or colored mana; do not greedily wait for maximum value.</td></tr><tr><td><b>Tooth and Nail</b></td><td>Develop mana, then use Plow Under and Witness to prevent Tron from reaching nine.</td></tr><tr><td><b>U/W Control</b></td><td>Cycle at end step, avoid exposing all threats to Wrath, and treat Decree and Dragon as the real game rather than Slide alone.</td></tr></tbody></table></div></section>
+<section id="interactions"><div class="eyebrow">6 · Key interactions</div><h2>Rules and sequencing that define the deck</h2><div class="grid2"><div class="card"><p>Cycling creates a triggered ability from Astral Slide; countering or removing the cycling card does not undo a trigger already created.</p></div><div class="card"><p>A creature exiled by Slide returns at the beginning of the next end step. Sliding a creature during an end step normally keeps it away until the following end step.</p></div><div class="card"><p>Sliding Eternal Witness or Viridian Shaman resets it as a new object and produces another enters-the-battlefield trigger when it returns.</p></div><div class="card"><p>Slide can remove a creature carrying Cranial Plating or modular counters; attachments fall off and counters do not return with the new object.</p></div><div class="card"><p>Wrath of God can be cast after sliding your own Witness or Shaman, leaving the protected creature to return after the sweep.</p></div><div class="card"><p>Eternal Dragon’s plainscycling fixes early land drops, while its upkeep recursion supplies a repeatable late threat.</p></div><div class="card"><p>Decree of Justice can be cycled for tokens at instant speed; the triggered token production is not the same as casting the sorcery.</p></div></div></section>
+<section id="piloting"><div class="eyebrow">7 · How to pilot the deck</div><h2>Decision rules for real games</h2><div class="numbered"><div class="card"><p>Plan the entire turn around available cycling mana. Tapping out for a creature may sacrifice Slide’s combat control.</p></div><div class="card"><p>Identify whether Slide is a value engine or a survival tool. Against Affinity it often protects life and breaks equipment; against control it mostly reuses Witness.</p></div><div class="card"><p>Sequence Viridian Shaman targets to damage the opponent’s mana, not merely the most visible artifact. Artifact lands are often the highest-tempo target.</p></div><div class="card"><p>Do not cast Wrath merely to trade evenly if Slide can neutralize combat for another turn and create a larger sweep.</p></div><div class="card"><p>Use Witness proactively when mana would otherwise go unused; the body can later be recycled by Slide.</p></div><div class="card"><p>Count the opponent’s post-sweeper reach. Disciple drains, Shrapnel Blast, Blinkmoth Nexus, and Decree tokens all attack from different zones.</p></div><div class="card"><p>When ahead, shorten the game. Eternal Dragon recursion is inevitable, but giving Tooth or KCI unlimited draw steps is unnecessary.</p></div></div></section>
+<section id="sideboarding"><div class="eyebrow">8 · Sideboarding principles</div><h2>Change roles without dismantling the engine</h2><div class="grid2"><div class="card"><p>Against Affinity, increase cheap artifact interaction and preserve enough sweepers to answer the creature half of the deck.</p></div><div class="card"><p>Against Tooth and slow control, remove narrow creature answers for Plow Under, Creeping Mold, Rude Awakening, or other proactive cards.</p></div><div class="card"><p>Circle of Protection: Red is strongest when red damage is the opponent’s actual route to victory, not merely a few sideboard cards.</p></div><div class="card"><p>Scrabbling Claws checks Eternal Witness recursion, opposing Eternal Dragons, and some Ironworks lines while cycling when weak.</p></div><div class="card"><p>Gilded Light protects from Fireball, Mindslaver targeting, and lethal Disciple/Charbelcher-style effects, but does not answer a board of Myr tokens.</p></div></div><h3>Typical role shifts</h3><div class="table-wrap"><table><thead><tr><th>Opponent</th><th>Your role</th><th>Sideboard plan</th></tr></thead><tbody><tr><td><b>Affinity</b></td><td><span class="role">Hard control</span></td><td>Bring cheap artifact hate and sweepers; trim Plow Under and the slowest finishers.</td></tr><tr><td><b>Tooth and Nail</b></td><td><span class="role">Mana-denial control</span></td><td>Bring Plow Under/Creeping Mold; trim creature-only removal.</td></tr><tr><td><b>U/W Control</b></td><td><span class="role">Recursive midrange</span></td><td>Add threats and mana denial; reduce Wraths and situational life gain.</td></tr><tr><td><b>Goblins</b></td><td><span class="role">Board control</span></td><td>Keep sweepers and Slide; trim slow land-denial cards.</td></tr></tbody></table></div></section>
+<section id="matchups"><div class="eyebrow">9 · Gauntlet-specific matchup guide</div><h2>The Worlds 2004 field</h2><div class="table-wrap"><table><thead><tr><th>Matchup</th><th>Role</th><th>Bring in / prioritize</th><th>Trim</th><th>Plan</th></tr></thead><tbody><tr><td><b>Affinity</b></td><td><span class="role">Control</span></td><td>Oxidize, Relic Barrier, extra sweepers</td><td>Plow Under, slow finishers</td><td>Break colored artifact lands and Plating, manage Disciple before sweeping, and use Slide to invalidate Ravager counters or combat.</td></tr><tr><td><b>Tooth and Nail</b></td><td><span class="role">Disruptive control</span></td><td>Plow Under, Creeping Mold, Rude Awakening</td><td>Wing Shards, some Wraths</td><td>Do not let Tron remain assembled. Witness should recur land denial more often than removal.</td></tr><tr><td><b>KCI / Incubator</b></td><td><span class="role">Clock plus disruption</span></td><td>Artifact hate, Gilded Light, Scrabbling Claws</td><td>Creature-only answers</td><td>Attack Ironworks or mana artifacts before Incubator activation. Gilded Light only covers some kills, so establish a clock.</td></tr><tr><td><b>U/W Control</b></td><td><span class="role">Value midrange</span></td><td>Plow Under, Rude Awakening, graveyard tools</td><td>Wrath, Wing Shards</td><td>Preserve cycling and Decree for end steps, fight over card-advantage engines, and avoid losing every threat to one Vengeance.</td></tr><tr><td><b>Big Red</b></td><td><span class="role">Control</span></td><td>Circle of Protection: Red, Wing Shards</td><td>Some slow cycling cards</td><td>Protect life, answer Slogger cleanly, and anticipate the post-board shift into land destruction.</td></tr><tr><td><b>Goblins</b></td><td><span class="role">Control</span></td><td>Wing Shards, additional sweepers</td><td>Plow Under</td><td>Warchief is the key tempo card. Slide can erase a lethal Piledriver attack until Wrath is available.</td></tr></tbody></table></div></section>
+<section id="road-milestones"><div class="eyebrow">Road to Worlds</div><h2>How Slide becomes the championship choice</h2><div class="timeline"><div class="event"><div class="date">Grand Prix Kuala Lumpur</div><h3>Two G/W Astral Control semifinalists</h3><p>The Witness-and-artifact-hate branch proves itself internationally.</p></div><div class="event"><div class="date">Grand Prix Nagoya</div><h3>A final Top 8 rehearsal</h3><p>Masaki Yokoi keeps the family visible immediately before Nuijten wins Worlds.</p></div></div></section><section id="sources"><div class="eyebrow">10 · Historical notes and sources</div><h2>What the archetype teaches</h2><p class="lead">Astral Slide won because it converted the format’s compulsory artifact answers into a coherent engine rather than a pile of hate cards. That is the deck’s main design lesson: narrow metagame cards become much stronger when the deck can reuse, cycle, or recover them.</p><h3>Historical sources</h3><ol class="source-list"><li><a href="https://mtg.fandom.com/wiki/World_Championship_Decks/2004">World Championship Decks 2004</a><span>The four commemorative World Championship lists and contemporary deck descriptions.</span></li><li><a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">Worlds 2004 Standard day-one leaders</a><span>The published 6–0 and 5–1 Standard lists used throughout this archive.</span></li><li><a href="https://mtgtop8.com/event?e=9243&amp;f=ST">Worlds 2004 event record</a><span>Event size, Top 8, archetype labels, and undefeated Standard decks.</span></li><li><a href="https://articles.starcitygames.com/articles/inside-the-metagame-regionals-2004-w-r-slide/">Inside the Metagame: Regionals 2004 — W/R Slide</a><span>Contemporary explanation of Slide’s control plan, mana growth, and recursive finishers.</span></li><li><a href="https://articles.starcitygames.com/articles/notes-from-grand-prix-nagoya-2004/">Notes from Grand Prix Nagoya 2004</a><span>A period metagame assessment immediately before Worlds.</span></li><li><a href="https://articles.starcitygames.com/articles/the-history-of-selesnya-part-two/">The History of Selesnya: Part Two</a><span>Retrospective context for the green-white Worlds build.</span></li></ol><p class="note">Decklists are reproduced as tournament data. Historical development is synthesized from contemporary articles and event records; strategic guidance is retrospective and written for a playable historical gauntlet.</p></section>
+</main></div><div id="preview"><img alt=""></div><footer class="footer">Worlds 2004 Standard Archive · Independent historical project. Magic cards and artwork © Wizards of the Coast.</footer><script>
+const preview=document.getElementById('preview'), pimg=preview.querySelector('img');let pinned=false;
+function imgURL(n){return 'https://api.scryfall.com/cards/named?exact='+encodeURIComponent(n)+'&format=image&version=normal'}
+function place(x,y){if(matchMedia('(max-width:650px)').matches){preview.style.left='50%';preview.style.top='50%';return}
+ const pad=14,w=preview.offsetWidth||305,h=preview.offsetHeight||425;let l=x+18,t=y+18;
+ if(l+w>innerWidth-pad)l=x-w-18;if(t+h>innerHeight-pad)t=innerHeight-h-pad;
+ l=Math.max(pad,Math.min(l,innerWidth-w-pad));t=Math.max(pad,Math.min(t,innerHeight-h-pad));
+ preview.style.left=l+'px';preview.style.top=t+'px'}
+function show(el,x,y,p=false){pimg.src=imgURL(el.dataset.card);pimg.alt=el.dataset.card;preview.classList.add('show');place(x,y);pinned=p}
+function hide(){if(!pinned)preview.classList.remove('show')}
+document.querySelectorAll('.card-name').forEach(el=>{
+ el.addEventListener('mouseenter',e=>show(el,e.clientX,e.clientY));el.addEventListener('mousemove',e=>place(e.clientX,e.clientY));el.addEventListener('mouseleave',hide);
+ el.addEventListener('focus',()=>{const r=el.getBoundingClientRect();show(el,r.right,r.top)});el.addEventListener('blur',hide);
+ el.addEventListener('click',e=>{if(matchMedia('(hover:none)').matches){e.preventDefault();show(el,innerWidth/2,innerHeight/3,true)}})
+});
+document.addEventListener('click',e=>{if(pinned&&!e.target.closest('.card-name')){pinned=false;preview.classList.remove('show')}});
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{const t=document.getElementById(b.dataset.target).textContent;
+ try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
+ const o=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=o,1200)}));
+
+const dossierSections=[...document.querySelectorAll('main section[id]')], tocLinks=[...document.querySelectorAll('.toc a')];
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tocLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-15% 0px -72% 0px'});dossierSections.forEach(s=>obs.observe(s));}
+</script></body></html>

@@ -1,0 +1,267 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ravager Affinity — Worlds 2004 Standard Archive</title><style>
+:root{
+ --bg:#071012;--panel:#101b1e;--panel2:#16262a;--ink:#eef3f0;--muted:#a9b7b2;
+ --line:#315057;--bronze:#cf9d5b;--cyan:#69c4cc;--green:#8ac78e;--red:#d77f6f;
+ --max:1220px;--radius:18px;--shadow:0 18px 48px rgba(0,0,0,.42);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:
+ radial-gradient(circle at 10% -10%,rgba(60,146,156,.19),transparent 34rem),
+ radial-gradient(circle at 92% 8%,rgba(184,111,58,.13),transparent 28rem),var(--bg);
+ color:var(--ink);font:16.5px/1.68 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#8bdde4;text-underline-offset:.17em}a:hover{color:#d6fbff}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.12;margin:0 0 .55em}
+h1{font-size:clamp(2.8rem,7vw,6.5rem);letter-spacing:-.045em}
+h2{font-size:clamp(2rem,4vw,3.45rem);letter-spacing:-.025em;border-bottom:1px solid var(--line);padding-bottom:12px}
+h3{font-size:1.45rem;margin-top:1.65em}h4{font-size:1.1rem}
+p{margin:.82em 0}.small,.note{font-size:.88rem;color:var(--muted)}
+.hero{min-height:72vh;position:relative;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:
+ linear-gradient(90deg,rgba(3,9,10,.97),rgba(3,9,10,.72) 48%,rgba(3,9,10,.25) 80%,rgba(3,9,10,.54)),
+ linear-gradient(0deg,var(--bg),transparent 56%),var(--hero) center 30%/cover no-repeat;filter:saturate(.78) contrast(1.08)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background-image:
+ linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(#000,transparent 82%)}
+.hero-inner,.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.hero-inner{padding:92px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:var(--bronze);font-weight:850;font-size:.78rem}
+.dek{max-width:850px;color:#d9e2df;font-size:clamp(1.05rem,2vw,1.35rem)}
+.archive-link{display:inline-flex;margin-bottom:25px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(4,11,12,.68);text-decoration:none;color:#e9f3ef;font-size:.82rem;font-weight:800}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px;background:rgba(6,13,14,.72);font-size:.84rem}
+.layout{width:min(var(--max),calc(100% - 36px));margin:40px auto 85px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:42px}
+.toc{position:sticky;top:20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(16,27,30,.93);padding:18px;max-height:calc(100vh - 40px);overflow:auto;box-shadow:var(--shadow)}
+.toc strong{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--bronze);margin-bottom:8px}
+.toc a{display:block;text-decoration:none;color:var(--muted);padding:7px 8px;border-radius:8px;font-size:.9rem;line-height:1.25}.toc a:hover{background:var(--panel2);color:white}
+main{min-width:0;max-width:100%}section{margin-bottom:58px;scroll-margin-top:24px}
+.callout{padding:19px 21px;border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:0 var(--radius) var(--radius) 0;background:linear-gradient(135deg,rgba(207,157,91,.1),rgba(105,196,204,.04));margin:22px 0}
+.grid2,.grid3{display:grid;gap:17px;margin:20px 0}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:19px;box-shadow:0 12px 30px rgba(0,0,0,.16)}.card h3,.card h4{margin-top:0}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(165px,100%),1fr));gap:14px;margin:23px 0;max-width:100%;overflow:hidden;align-items:start}.art-grid figure{margin:0;min-width:0;width:100%;max-width:245px;justify-self:center;border:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}.art-grid img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:488/680;object-fit:contain;background:#081012}.art-grid figcaption{padding:9px 11px;color:var(--muted);font-size:.78rem;text-align:center}
+.deck{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;margin:17px 0}
+.deck summary{cursor:pointer;list-style:none;padding:17px 19px;display:flex;justify-content:space-between;gap:18px;align-items:center;background:linear-gradient(90deg,rgba(105,196,204,.09),rgba(207,157,91,.06))}
+.deck summary::-webkit-details-marker{display:none}.deck summary strong{font-family:Georgia,serif;font-size:1.12rem}.deck summary small{display:block;color:var(--muted);margin-top:3px}
+.plus{font-size:1.5rem;color:var(--bronze);transition:.2s}.deck[open] .plus{transform:rotate(45deg)}
+.deck-body{padding:0 19px 19px}.deck-meta{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin:16px 0}
+.copy{border:1px solid #527079;border-radius:9px;background:#193238;color:#fff;padding:8px 11px;font-weight:750;cursor:pointer}.copy:hover{background:#24464e}
+.deck-columns{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#060d0e}
+.deck-col{padding:18px}.deck-col+.deck-col{border-left:1px solid var(--line)}
+.group{margin-bottom:18px}.group h4{font:800 .76rem/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.11em;color:var(--bronze);margin:0 0 8px}
+.row{padding:3px 0;border-bottom:1px dotted rgba(255,255,255,.08)}.qty{display:inline-block;min-width:1.45em;color:var(--cyan);font-variant-numeric:tabular-nums}
+.card-name{border-bottom:1px dotted rgba(255,255,255,.35);cursor:help;outline:none}.card-name:hover,.card-name:focus{color:white;border-color:var(--bronze)}
+.table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);margin:20px 0}
+table{border-collapse:collapse;width:100%;min-width:760px;background:var(--panel)}th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#173038;text-transform:uppercase;letter-spacing:.07em;font-size:.75rem}
+.list-clean{padding-left:1.2em}.list-clean li{margin:.55em 0}
+#preview{position:fixed;z-index:9999;width:min(305px,72vw);opacity:0;pointer-events:none;transform:translateY(6px) scale(.98);transition:.12s;filter:drop-shadow(0 18px 30px rgba(0,0,0,.65))}
+#preview.show{opacity:1;transform:translateY(0) scale(1)}#preview img{width:100%;max-height:88vh;object-fit:contain;border-radius:4.8%;background:#111}
+.footer{border-top:1px solid var(--line);padding:28px 18px 45px;text-align:center;color:var(--muted);font-size:.84rem}
+.searchbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:20px 0}.searchbar input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#081113;color:white;font:inherit}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.archetype-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.16)}.archetype-card:hover{transform:translateY(-2px);border-color:#5d7a81}.archetype-art{height:150px;background-position:center;background-size:cover;position:relative}.archetype-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--panel),transparent 65%)}.archetype-copy{padding:17px}.archetype-copy h3{margin:0 0 6px}.tag{color:var(--bronze);text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:800}
+@media(max-width:930px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:1fr}}
+@media(max-width:650px){body{font-size:16px}.hero{min-height:64vh}.hero-inner,.wrap,.layout{width:min(100% - 24px,var(--max))}.grid2,.cards,.deck-columns{grid-template-columns:1fr}.deck-col+.deck-col{border-left:0;border-top:1px solid var(--line)}.art-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr));gap:10px}.art-grid figure{max-width:220px}.deck-meta{flex-direction:column}#preview{width:min(280px,78vw);left:50%!important;top:50%!important;transform:translate(-50%,-46%) scale(.98)}#preview.show{transform:translate(-50%,-50%) scale(1)}}
+
+.lead{font-size:1.16rem;color:#dce7e3}.dropcap:first-letter{float:left;font-family:Georgia,serif;font-size:4.2rem;line-height:.78;padding:.12em .12em 0 0;color:var(--bronze)}
+.design-grid,.phase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}.design-grid .card,.phase-grid .card{height:100%}
+.timeline{position:relative;margin:28px 0;padding-left:29px}.timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--bronze),var(--green))}.event{position:relative;margin:0 0 26px}.event:before{content:"";position:absolute;left:-28px;top:.5em;width:13px;height:13px;border:3px solid var(--bronze);background:var(--bg);border-radius:50%}.date{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:850;color:var(--bronze)}
+.split-list{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:20px 0}.good{border-left:4px solid var(--green)}.bad{border-left:4px solid var(--red)}
+.numbered{counter-reset:item;display:grid;gap:13px;margin:20px 0}.numbered .card{position:relative;padding-left:58px}.numbered .card:before{counter-increment:item;content:counter(item);position:absolute;left:18px;top:17px;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:rgba(207,157,91,.15);color:var(--bronze);font-weight:900}
+.role{display:inline-block;padding:3px 8px;border-radius:999px;background:rgba(105,196,204,.12);color:#bcebf0;font-size:.73rem;font-weight:800;white-space:nowrap}.source-list{padding-left:1.25em}.source-list li{margin:.75em 0}.source-list span{display:block;color:var(--muted);font-size:.88rem}.recommend{border-left-color:var(--green)}
+@media(max-width:700px){.design-grid,.phase-grid,.split-list{grid-template-columns:1fr}}
+.toc a.active{background:var(--panel2);color:white}</style></head><body>
+<header class="hero" style="--hero:url('https://api.scryfall.com/cards/named?exact=Arcbound%20Ravager&format=image&version=art_crop')"><div class="hero-inner"><a class="archive-link" href="index.html">← World Between Worlds 2004 Archive</a><div class="eyebrow">Long-form archetype dossier · September 2004 Standard</div><h1>Ravager Affinity</h1><p class="dek">Attack like an aggro deck, count like a combo deck, and turn every artifact into mana, damage, cards, or modular counters.</p><div class="meta"><span class="pill">Aggro / Combo</span><span class="pill">Onslaught–Fifth Dawn Standard</span><span class="pill">Period decklists and rules</span></div></div></header>
+<div class="layout"><nav class="toc"><strong>Table of contents</strong><a href="#scope">Scope of this guide</a><a href="#identity">1. Cover and deck identity</a><a href="#what-it-does">2. What this deck does</a><a href="#history">3. History and evolution</a><a href="#decklists">4. Historical decklists and recommended 75</a><a href="#mulligans">5. Mulligans and opening turns</a><a href="#interactions">6. Key interactions</a><a href="#piloting">7. How to pilot the deck</a><a href="#sideboarding">8. Sideboarding principles</a><a href="#matchups">9. Gauntlet-specific matchup guide</a><a href="#sources">10. Historical notes and sources</a></nav><main>
+<section id="scope"><div class="callout"><b>Scope.</b> This dossier covers post-Skullclamp Standard Affinity from Fifth Dawn through Worlds, including the Chrome Mox/Welding Jar and Aether Vial/Atog branches.</div></section>
+<section id="identity"><div class="eyebrow">1 · Cover and deck identity</div><h2>Ravager Affinity</h2><p class="lead dropcap">Affinity’s strength came from stacking multiple discounts and conversion engines. Artifact lands paid for spells while increasing affinity counts; free creatures carried Cranial Plating; Ravager converted threatened artifacts into counters; Disciple converted the same sacrifices into direct damage.</p><p class="lead ">The deck therefore changed roles without changing cards. It could flood the board, play a protected Plating threat, or stop attacking entirely and calculate a lethal Ravager–Disciple sacrifice chain. That role flexibility is why ordinary artifact removal rarely felt sufficient.</p><div class="design-grid"><div class="card"><h3>Mana and spell are the same object</h3><p>Artifact lands cast spells, reduce affinity costs, feed Ravager, power Plating, and trigger Disciple when destroyed.</p></div><div class="card"><h3>Redundant lethal axes</h3><p>Combat, Plating, Disciple drains, Shrapnel Blast, Atog, Nexus, and Furnace Dragon demand different answers.</p></div><div class="card"><h3>Virtual haste</h3><p>Plating can move at instant speed and modular counters can move after combat, letting an unblocked creature become lethal.</p></div><div class="card"><h3>Punishes narrow hate</h3><p>One-for-one artifact removal can be sacrificed in response, while sweepers may still leave Disciple triggers or a large modular recipient.</p></div></div><div class="art-grid"><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Arcbound%20Ravager&format=image&version=normal" alt="Arcbound Ravager"><figcaption><b>Arcbound Ravager</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Disciple%20of%20the%20Vault&format=image&version=normal" alt="Disciple of the Vault"><figcaption><b>Disciple of the Vault</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Cranial%20Plating&format=image&version=normal" alt="Cranial Plating"><figcaption><b>Cranial Plating</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Thoughtcast&format=image&version=normal" alt="Thoughtcast"><figcaption><b>Thoughtcast</b></figcaption></figure></div></section>
+<section id="what-it-does"><div class="eyebrow">2 · What this deck does</div><h2>The strategic machine</h2><div class="phase-grid"><div class="card"><h3>Turn 1: establish artifact density</h3><p>Artifact land plus Ornithopter, Worker, Sphere, Jar, Vial, or Chrome Mox sets up the discount engine.</p></div><div class="card"><h3>Turn 2: create a must-answer permanent</h3><p>Ravager, Disciple, or Cranial Plating forces the opponent to interact before their slower plan begins.</p></div><div class="card"><h3>Turns 3–4: choose the kill</h3><p>Attack with Plating, transfer modular counters, burn with Shrapnel Blast, or sacrifice the board through Disciple.</p></div><div class="card"><h3>Post-board: transform around hate</h3><p>Mana Leak, Annul, Pyroclasm, Oxidize, or Furnace Dragon let Affinity attack the opponent’s anti-Affinity plan rather than simply replay game one.</p></div></div></section>
+<section id="history"><div class="eyebrow">3 · History and evolution</div><h2>How the archetype reached Worlds</h2><div class="timeline"><div class="event"><div class="date">October 2003</div><h3>Mirrodin creates the shell</h3><p>Artifact lands, affinity creatures, Thoughtcast, Disciple, and Atog establish an artifact aggro-combo strategy.</p></div><div class="event"><div class="date">February 2004</div><h3>Darksteel breaks the conversion engine</h3><p>Arcbound Ravager and modular make every artifact disposable. Skullclamp makes the free-creature shell an overwhelming draw engine.</p></div><div class="event"><div class="date">June 2004</div><h3>Skullclamp is banned</h3><p>The deck loses its easiest refuel mechanism, but the underlying mana and sacrifice engines remain intact.</p></div><div class="event"><div class="date">Fifth Dawn</div><h3>Cranial Plating restores explosiveness</h3><p>Plating gives every small artifact creature immediate lethal potential, while cards such as Serum Visions and Engineered Explosives expand sideboard and splash options.</p></div><div class="event"><div class="date">Worlds 2004</div><h3>Multiple branches succeed</h3><p>Paquette’s Chrome Mox/Jar build reaches the final; Häyrynen goes 6–0 with a conventional build; Cornelissen and Gulinski succeed with Vial and Atog.</p></div><div class="event"><div class="date">March 2005</div><h3>The environment finally removes the engine</h3><p>Arcbound Ravager, Disciple of the Vault, and the six artifact lands are banned from Standard after months of continued dominance.</p></div></div></section>
+<section id="decklists"><div class="eyebrow">4 · Historical decklists and recommended 75</div><h2>Registered tournament lists</h2><div class="callout recommend"><b>Recommended gauntlet configuration.</b> Aeo Paquette’s finalist list is the iconic default. Andrei Häyrynen’s 6–0 list is the better “normal game” reference, while Kamiel Cornelissen shows the Vial/Atog branch.</div><p>Select or tap any card name for a full-card preview. Each registered 75 can be copied independently.</p><details class="deck" open>
+ <summary><span><strong>Aeo Paquette — Affinity</strong><small>Worlds finalist; 5–1 in Standard · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>The famous finalist list cut the green artifact land and Myr Enforcer for Chrome Mox, Welding Jar, Somber Hoverguard, and an explosive Furnace Dragon sideboard.</p>
+  <div class="deck-meta"><div><b>Aeo Paquette</b><div class="small">Worlds finalist; 5–1 in Standard · September 1–5, 2004</div></div><button class="copy" data-target="deck-0">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 22</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Ravager">Arcbound Ravager</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Worker">Arcbound Worker</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Disciple of the Vault">Disciple of the Vault</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Frogmite">Frogmite</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Ornithopter">Ornithopter</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Somber Hoverguard">Somber Hoverguard</span></div></div><div class="group"><h4>Spells · 20</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Chrome Mox">Chrome Mox</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Cranial Plating">Cranial Plating</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Shrapnel Blast">Shrapnel Blast</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Thoughtcast">Thoughtcast</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Welding Jar">Welding Jar</span></div></div><div class="group"><h4>Lands · 18</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Blinkmoth Nexus">Blinkmoth Nexus</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Great Furnace">Great Furnace</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Glimmervoid">Glimmervoid</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Seat of the Synod">Seat of the Synod</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Vault of Whispers">Vault of Whispers</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Furnace Dragon">Furnace Dragon</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Seething Song">Seething Song</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Serum Visions">Serum Visions</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div></div></div></div>
+  <pre id="deck-0" hidden>Aeo Paquette — Affinity
+Worlds finalist; 5–1 in Standard — 2004 World Championships, San Francisco (September 1–5, 2004)
+
+Creatures · 22
+4 Arcbound Ravager
+4 Arcbound Worker
+4 Disciple of the Vault
+4 Frogmite
+4 Ornithopter
+2 Somber Hoverguard
+
+Spells · 20
+4 Chrome Mox
+4 Cranial Plating
+4 Shrapnel Blast
+4 Thoughtcast
+4 Welding Jar
+
+Lands · 18
+3 Blinkmoth Nexus
+4 Great Furnace
+3 Glimmervoid
+4 Seat of the Synod
+4 Vault of Whispers
+
+Sideboard · 15
+4 Furnace Dragon
+4 Seething Song
+3 Serum Visions
+4 Annul</pre>
+  <p class="small">Source: <a href="https://mtg.fandom.com/wiki/World_Championship_Decks/2004">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Andrei Häyrynen — Affinity</strong><small>6–0 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>The undefeated version was less all-in than Paquette&#x27;s list and gained a highly flexible transformational sideboard.</p>
+  <div class="deck-meta"><div><b>Andrei Häyrynen</b><div class="small">6–0 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-1">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 21</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Ornithopter">Ornithopter</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Frogmite">Frogmite</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Arcbound Worker">Arcbound Worker</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Disciple of the Vault">Disciple of the Vault</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Ravager">Arcbound Ravager</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Myr Enforcer">Myr Enforcer</span></div></div><div class="group"><h4>Spells · 19</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Chromatic Sphere">Chromatic Sphere</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Cranial Plating">Cranial Plating</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Thoughtcast">Thoughtcast</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Welding Jar">Welding Jar</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Shrapnel Blast">Shrapnel Blast</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Pyrite Spellbomb">Pyrite Spellbomb</span></div></div><div class="group"><h4>Lands · 20</h4><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Glimmervoid">Glimmervoid</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Great Furnace">Great Furnace</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Vault of Whispers">Vault of Whispers</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Seat of the Synod">Seat of the Synod</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Tree of Tales">Tree of Tales</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Blinkmoth Nexus">Blinkmoth Nexus</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Pyroclasm">Pyroclasm</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Mana Leak">Mana Leak</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Tree of Tales">Tree of Tales</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Oxidize">Oxidize</span></div></div></div></div>
+  <pre id="deck-1" hidden>Andrei Häyrynen — Affinity
+6–0 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Creatures · 21
+4 Ornithopter
+4 Frogmite
+3 Arcbound Worker
+4 Disciple of the Vault
+4 Arcbound Ravager
+2 Myr Enforcer
+
+Spells · 19
+4 Chromatic Sphere
+4 Cranial Plating
+4 Thoughtcast
+2 Welding Jar
+3 Shrapnel Blast
+2 Pyrite Spellbomb
+
+Lands · 20
+2 Glimmervoid
+4 Great Furnace
+4 Vault of Whispers
+4 Seat of the Synod
+2 Tree of Tales
+4 Blinkmoth Nexus
+
+Sideboard · 15
+3 Pyroclasm
+3 Electrostatic Bolt
+4 Mana Leak
+1 Tree of Tales
+4 Oxidize</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Kamiel Cornelissen — Aether Vial Affinity</strong><small>Worlds Top 8; 5–1 in Standard · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>Cornelissen&#x27;s branch used Aether Vial, Atog, and Myr Enforcer rather than Shrapnel Blast and Chrome Mox.</p>
+  <div class="deck-meta"><div><b>Kamiel Cornelissen</b><div class="small">Worlds Top 8; 5–1 in Standard · September 1–5, 2004</div></div><button class="copy" data-target="deck-2">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 24</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Worker">Arcbound Worker</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Frogmite">Frogmite</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Disciple of the Vault">Disciple of the Vault</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Ravager">Arcbound Ravager</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Atog">Atog</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Myr Retriever">Myr Retriever</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Myr Enforcer">Myr Enforcer</span></div></div><div class="group"><h4>Spells · 16</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Aether Vial">Aether Vial</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Cranial Plating">Cranial Plating</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Chromatic Sphere">Chromatic Sphere</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Thoughtcast">Thoughtcast</span></div></div><div class="group"><h4>Lands · 20</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Great Furnace">Great Furnace</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Seat of the Synod">Seat of the Synod</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Blinkmoth Nexus">Blinkmoth Nexus</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Darksteel Citadel">Darksteel Citadel</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Glimmervoid">Glimmervoid</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Vault of Whispers">Vault of Whispers</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Relic Barrier">Relic Barrier</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Pyroclasm">Pyroclasm</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Myr Retriever">Myr Retriever</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Somber Hoverguard">Somber Hoverguard</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Glimmervoid">Glimmervoid</span></div></div></div></div>
+  <pre id="deck-2" hidden>Kamiel Cornelissen — Aether Vial Affinity
+Worlds Top 8; 5–1 in Standard — 2004 World Championships, San Francisco (September 1–5, 2004)
+
+Creatures · 24
+4 Arcbound Worker
+4 Frogmite
+4 Disciple of the Vault
+4 Arcbound Ravager
+3 Atog
+1 Myr Retriever
+4 Myr Enforcer
+
+Spells · 16
+4 Aether Vial
+4 Cranial Plating
+4 Chromatic Sphere
+4 Thoughtcast
+
+Lands · 20
+4 Great Furnace
+4 Seat of the Synod
+4 Blinkmoth Nexus
+3 Darksteel Citadel
+1 Glimmervoid
+4 Vault of Whispers
+
+Sideboard · 15
+4 Relic Barrier
+4 Electrostatic Bolt
+3 Pyroclasm
+2 Myr Retriever
+1 Somber Hoverguard
+1 Glimmervoid</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Sebastian Gulinski — Aether Vial Affinity</strong><small>5–1 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>This hybrid kept Vial and Atog while restoring Shrapnel Blast for reach.</p>
+  <div class="deck-meta"><div><b>Sebastian Gulinski</b><div class="small">5–1 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-3">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Creatures · 21</h4><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Atog">Atog</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Myr Enforcer">Myr Enforcer</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Disciple of the Vault">Disciple of the Vault</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Ravager">Arcbound Ravager</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Arcbound Worker">Arcbound Worker</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Frogmite">Frogmite</span></div></div><div class="group"><h4>Spells · 19</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Shrapnel Blast">Shrapnel Blast</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Cranial Plating">Cranial Plating</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Aether Vial">Aether Vial</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Chromatic Sphere">Chromatic Sphere</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Thoughtcast">Thoughtcast</span></div></div><div class="group"><h4>Lands · 20</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Seat of the Synod">Seat of the Synod</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Vault of Whispers">Vault of Whispers</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Great Furnace">Great Furnace</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Darksteel Citadel">Darksteel Citadel</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Glimmervoid">Glimmervoid</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Blinkmoth Nexus">Blinkmoth Nexus</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Relic Barrier">Relic Barrier</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Pyroclasm">Pyroclasm</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Mana Leak">Mana Leak</span></div></div></div></div>
+  <pre id="deck-3" hidden>Sebastian Gulinski — Aether Vial Affinity
+5–1 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Creatures · 21
+2 Atog
+3 Myr Enforcer
+4 Disciple of the Vault
+4 Arcbound Ravager
+4 Arcbound Worker
+4 Frogmite
+
+Spells · 19
+3 Shrapnel Blast
+4 Cranial Plating
+4 Aether Vial
+4 Chromatic Sphere
+4 Thoughtcast
+
+Lands · 20
+4 Seat of the Synod
+4 Vault of Whispers
+4 Great Furnace
+2 Darksteel Citadel
+3 Glimmervoid
+3 Blinkmoth Nexus
+
+Sideboard · 15
+4 Electrostatic Bolt
+4 Relic Barrier
+4 Pyroclasm
+3 Mana Leak</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details></section>
+<section id="mulligans"><div class="eyebrow">5 · Mulligans and opening turns</div><h2>Keep a plan, not a collection of powerful cards</h2><div class="split-list"><div class="card good"><h3>Strong keeps</h3><ul><li>Two artifact lands with a payoff such as Thoughtcast, Ravager, or Plating.</li><li>One land plus Chrome Mox or a dense zero/one-mana artifact sequence that casts Thoughtcast.</li><li>Ravager plus Disciple with enough artifacts to threaten a noncombat kill.</li><li>Against known artifact hate, a hand with Welding Jar, Thoughtcast, or a sideboard counter rather than only speed.</li></ul></div><div class="card bad"><h3>Common mulligans</h3><ul><li>Hands with expensive cards but insufficient artifact count.</li><li>No-colored-source hands that cannot cast Disciple, Thoughtcast, or Shrapnel Blast.</li><li>Multiple Cranial Platings without creatures.</li><li>Reactive post-board hands that have hate but no pressure.</li></ul></div></div><h3>Opening-turn priorities</h3><div class="table-wrap"><table><thead><tr><th>Context</th><th>Preferred sequence</th></tr></thead><tbody><tr><td><b>Aggressive default</b></td><td>Artifact land, zero/one-mana artifacts, then Ravager or Plating. Count turn-three damage before choosing the second-turn threat.</td></tr><tr><td><b>Against Wrath decks</b></td><td>Lead with threats that preserve value—Nexus, Ravager, Jar—and avoid committing every free body without Disciple or Thoughtcast.</td></tr><tr><td><b>Against red sweepers</b></td><td>Prioritize Ravager and larger affinity creatures; keep Worker or Nexus available as modular recipients.</td></tr><tr><td><b>Post-board combo plan</b></td><td>Use Annul/Mana Leak to protect the decisive permanent rather than fighting every piece of hate.</td></tr></tbody></table></div></section>
+<section id="interactions"><div class="eyebrow">6 · Key interactions</div><h2>Rules and sequencing that define the deck</h2><div class="grid2"><div class="card"><p>Ravager can sacrifice any artifact, including artifact lands, Welding Jar, Cranial Plating, and itself.</p></div><div class="card"><p>When Ravager dies, modular targets an artifact creature; the recipient must still be legal when the trigger resolves.</p></div><div class="card"><p>Disciple triggers for each artifact put into your graveyard from the battlefield, including artifacts sacrificed in response to removal.</p></div><div class="card"><p>Cranial Plating’s black-black equip ability may be activated at instant speed, including after blockers are declared.</p></div><div class="card"><p>Blinkmoth Nexus becomes an artifact creature, can receive modular counters, and adds to Plating while animated.</p></div><div class="card"><p>Atog and Ravager can consume the same category of resources but require different damage calculations; do not sacrifice away a safer lethal line.</p></div><div class="card"><p>Furnace Dragon’s affinity for artifacts can reduce its cost dramatically, and its trigger can exile the opponent’s artifact board while your Dragon remains.</p></div></div></section>
+<section id="piloting"><div class="eyebrow">7 · How to pilot the deck</div><h2>Decision rules for real games</h2><div class="numbered"><div class="card"><p>Before every attack, count three versions of lethal: current combat, Plating movement, and full sacrifice through Ravager/Disciple.</p></div><div class="card"><p>Do not sacrifice artifacts merely because you can. Artifact count is mana, Thoughtcast cost, Plating power, and future Disciple damage.</p></div><div class="card"><p>Sequence artifact lands last when ordinary lands or zero-mana artifacts can cast the same spell; this reduces exposure to Shatter and Viridian Shaman.</p></div><div class="card"><p>Against sweepers, decide whether Ravager should consolidate counters or preserve multiple post-Wrath bodies through modular.</p></div><div class="card"><p>Use Thoughtcast before committing to an all-in line unless the extra mana or artifact must remain available for protection.</p></div><div class="card"><p>When the opponent has instant-speed artifact removal, make them act before moving Plating or sacrificing the board.</p></div><div class="card"><p>Post-board, recognize when you are the control deck in the mirror. Pyroclasm, Electrostatic Bolt, and Oxidize may matter more than the fastest draw.</p></div></div></section>
+<section id="sideboarding"><div class="eyebrow">8 · Sideboarding principles</div><h2>Change roles without dismantling the engine</h2><div class="grid2"><div class="card"><p>Choose the transformation that attacks the opponent’s specific hate: counters for Vengeance/Slide, Pyroclasm for creature mirrors, Furnace Dragon for artifact mirrors.</p></div><div class="card"><p>Do not overload on colored sideboard cards without preserving enough Glimmervoids, colored artifact lands, Spheres, or Chrome Moxen.</p></div><div class="card"><p>Welding Jar protects against destroy effects but not Oxidize? It does protect from destroy, while exile, sacrifice, and toughness reduction require different responses.</p></div><div class="card"><p>Against Wrath decks, trim the weakest ground creatures before trimming Thoughtcast or the engines that rebuild.</p></div><div class="card"><p>In the mirror, Disciple, Ravager, and artifact-land timing are more important than raw creature count.</p></div></div><h3>Typical role shifts</h3><div class="table-wrap"><table><thead><tr><th>Opponent</th><th>Your role</th><th>Sideboard plan</th></tr></thead><tbody><tr><td><b>Astral Slide</b></td><td><span class="role">Resilient aggro-combo</span></td><td>Bring permission/Furnace Dragon; trim fragile creatures that trade poorly into Shaman and Wrath.</td></tr><tr><td><b>Affinity mirror</b></td><td><span class="role">Interactive combo</span></td><td>Bring Pyroclasm, Bolt, Oxidize; trim slower or redundant equipment.</td></tr><tr><td><b>Big Red</b></td><td><span class="role">Protected aggro</span></td><td>Use Jar and counters; avoid exposing every one-toughness creature to Pyroclasm.</td></tr><tr><td><b>KCI</b></td><td><span class="role">Fast disruption</span></td><td>Bring counters and artifact interaction; keep the fastest clock.</td></tr></tbody></table></div></section>
+<section id="matchups"><div class="eyebrow">9 · Gauntlet-specific matchup guide</div><h2>The Worlds 2004 field</h2><div class="table-wrap"><table><thead><tr><th>Matchup</th><th>Role</th><th>Bring in / prioritize</th><th>Trim</th><th>Plan</th></tr></thead><tbody><tr><td><b>Astral Slide</b></td><td><span class="role">Aggro-combo</span></td><td>Annul, Mana Leak, Furnace Dragon</td><td>Some fragile bodies</td><td>Force Slide to answer multiple axes. Disciple damage and Nexus matter after Wrath; do not let Shaman repeatedly reset.</td></tr><tr><td><b>U/W Control</b></td><td><span class="role">Aggro-combo</span></td><td>Annul, counters, resilient threats</td><td>Some Atogs or Workers</td><td>Play around Wrath and Vengeance, protect Plating or Disciple, and use Nexus to maintain pressure.</td></tr><tr><td><b>Big Red</b></td><td><span class="role">Tempo aggro</span></td><td>Counters, Jar, larger creatures</td><td>Ornithopter/Worker as needed</td><td>Pyroclasm punishes small boards; Ravager should preserve power and force awkward removal timing.</td></tr><tr><td><b>Goblins</b></td><td><span class="role">Race / control after board</span></td><td>Pyroclasm, Bolt</td><td>Slower draw pieces depending build</td><td>You are normally faster, but Sharpshooter and Oxidize create blowouts. Kill Warchief if the game slows.</td></tr><tr><td><b>Tooth and Nail</b></td><td><span class="role">Pure race</span></td><td>Mana Leak/Oxidize if available</td><td>Defensive cards</td><td>End the game before Oblivion Stone or entwined Tooth. Disciple is the cleanest way around a board reset.</td></tr><tr><td><b>KCI / Incubator</b></td><td><span class="role">Fast disruption</span></td><td>Annul, Mana Leak, artifact removal</td><td>Some combat-only cards</td><td>Pressure quickly while holding interaction for Ironworks or Incubator; do not let them untap with both mana and protection.</td></tr></tbody></table></div></section>
+<section id="sources"><div class="eyebrow">10 · Historical notes and sources</div><h2>What the archetype teaches</h2><p class="lead">Affinity’s lesson is not merely that artifact lands were too strong. The deck’s real power was systemic: every permanent participated in several engines simultaneously, so destroying one object rarely removed all of its value.</p><h3>Historical sources</h3><ol class="source-list"><li><a href="https://mtg.fandom.com/wiki/World_Championship_Decks/2004">World Championship Decks 2004</a><span>The four commemorative World Championship lists and contemporary deck descriptions.</span></li><li><a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">Worlds 2004 Standard day-one leaders</a><span>The published 6–0 and 5–1 Standard lists used throughout this archive.</span></li><li><a href="https://mtgtop8.com/event?e=9243&amp;f=ST">Worlds 2004 event record</a><span>Event size, Top 8, archetype labels, and undefeated Standard decks.</span></li><li><a href="https://articles.starcitygames.com/articles/inside-the-metagame-clamp-affinity/">Inside the Metagame: Clamp-Affinity</a><span>The pre-ban Darksteel stage of Affinity and why Skullclamp fit the shell so perfectly.</span></li><li><a href="https://articles.starcitygames.com/articles/the-daffinitive-affinity-guide/">The Daffinitive Affinity Guide</a><span>A detailed contemporary primer and matchup-testing account from late 2004.</span></li><li><a href="https://articles.starcitygames.com/articles/from-right-field-where-have-you-been-dom-dimaggio-a-look-back-at-2004/">A Look Back at 2004</a><span>Retrospective analysis of the overlapping Affinity engines.</span></li></ol><p class="note">Decklists are reproduced as tournament data. Historical development is synthesized from contemporary articles and event records; strategic guidance is retrospective and written for a playable historical gauntlet.</p></section>
+</main></div><div id="preview"><img alt=""></div><footer class="footer">Worlds 2004 Standard Archive · Independent historical project. Magic cards and artwork © Wizards of the Coast.</footer><script>
+const preview=document.getElementById('preview'), pimg=preview.querySelector('img');let pinned=false;
+function imgURL(n){return 'https://api.scryfall.com/cards/named?exact='+encodeURIComponent(n)+'&format=image&version=normal'}
+function place(x,y){if(matchMedia('(max-width:650px)').matches){preview.style.left='50%';preview.style.top='50%';return}
+ const pad=14,w=preview.offsetWidth||305,h=preview.offsetHeight||425;let l=x+18,t=y+18;
+ if(l+w>innerWidth-pad)l=x-w-18;if(t+h>innerHeight-pad)t=innerHeight-h-pad;
+ l=Math.max(pad,Math.min(l,innerWidth-w-pad));t=Math.max(pad,Math.min(t,innerHeight-h-pad));
+ preview.style.left=l+'px';preview.style.top=t+'px'}
+function show(el,x,y,p=false){pimg.src=imgURL(el.dataset.card);pimg.alt=el.dataset.card;preview.classList.add('show');place(x,y);pinned=p}
+function hide(){if(!pinned)preview.classList.remove('show')}
+document.querySelectorAll('.card-name').forEach(el=>{
+ el.addEventListener('mouseenter',e=>show(el,e.clientX,e.clientY));el.addEventListener('mousemove',e=>place(e.clientX,e.clientY));el.addEventListener('mouseleave',hide);
+ el.addEventListener('focus',()=>{const r=el.getBoundingClientRect();show(el,r.right,r.top)});el.addEventListener('blur',hide);
+ el.addEventListener('click',e=>{if(matchMedia('(hover:none)').matches){e.preventDefault();show(el,innerWidth/2,innerHeight/3,true)}})
+});
+document.addEventListener('click',e=>{if(pinned&&!e.target.closest('.card-name')){pinned=false;preview.classList.remove('show')}});
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{const t=document.getElementById(b.dataset.target).textContent;
+ try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
+ const o=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=o,1200)}));
+
+const dossierSections=[...document.querySelectorAll('main section[id]')], tocLinks=[...document.querySelectorAll('.toc a')];
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tocLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-15% 0px -72% 0px'});dossierSections.forEach(s=>obs.observe(s));}
+</script></body></html>

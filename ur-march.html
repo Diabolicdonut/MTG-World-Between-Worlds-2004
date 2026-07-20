@@ -1,0 +1,246 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blue-Red March–Obliterate — Worlds 2004 Standard Archive</title><style>
+:root{
+ --bg:#071012;--panel:#101b1e;--panel2:#16262a;--ink:#eef3f0;--muted:#a9b7b2;
+ --line:#315057;--bronze:#cf9d5b;--cyan:#69c4cc;--green:#8ac78e;--red:#d77f6f;
+ --max:1220px;--radius:18px;--shadow:0 18px 48px rgba(0,0,0,.42);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:
+ radial-gradient(circle at 10% -10%,rgba(60,146,156,.19),transparent 34rem),
+ radial-gradient(circle at 92% 8%,rgba(184,111,58,.13),transparent 28rem),var(--bg);
+ color:var(--ink);font:16.5px/1.68 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#8bdde4;text-underline-offset:.17em}a:hover{color:#d6fbff}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.12;margin:0 0 .55em}
+h1{font-size:clamp(2.8rem,7vw,6.5rem);letter-spacing:-.045em}
+h2{font-size:clamp(2rem,4vw,3.45rem);letter-spacing:-.025em;border-bottom:1px solid var(--line);padding-bottom:12px}
+h3{font-size:1.45rem;margin-top:1.65em}h4{font-size:1.1rem}
+p{margin:.82em 0}.small,.note{font-size:.88rem;color:var(--muted)}
+.hero{min-height:72vh;position:relative;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:
+ linear-gradient(90deg,rgba(3,9,10,.97),rgba(3,9,10,.72) 48%,rgba(3,9,10,.25) 80%,rgba(3,9,10,.54)),
+ linear-gradient(0deg,var(--bg),transparent 56%),var(--hero) center 30%/cover no-repeat;filter:saturate(.78) contrast(1.08)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background-image:
+ linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(#000,transparent 82%)}
+.hero-inner,.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.hero-inner{padding:92px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:var(--bronze);font-weight:850;font-size:.78rem}
+.dek{max-width:850px;color:#d9e2df;font-size:clamp(1.05rem,2vw,1.35rem)}
+.archive-link{display:inline-flex;margin-bottom:25px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(4,11,12,.68);text-decoration:none;color:#e9f3ef;font-size:.82rem;font-weight:800}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 11px;background:rgba(6,13,14,.72);font-size:.84rem}
+.layout{width:min(var(--max),calc(100% - 36px));margin:40px auto 85px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:42px}
+.toc{position:sticky;top:20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(16,27,30,.93);padding:18px;max-height:calc(100vh - 40px);overflow:auto;box-shadow:var(--shadow)}
+.toc strong{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--bronze);margin-bottom:8px}
+.toc a{display:block;text-decoration:none;color:var(--muted);padding:7px 8px;border-radius:8px;font-size:.9rem;line-height:1.25}.toc a:hover{background:var(--panel2);color:white}
+main{min-width:0;max-width:100%}section{margin-bottom:58px;scroll-margin-top:24px}
+.callout{padding:19px 21px;border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:0 var(--radius) var(--radius) 0;background:linear-gradient(135deg,rgba(207,157,91,.1),rgba(105,196,204,.04));margin:22px 0}
+.grid2,.grid3{display:grid;gap:17px;margin:20px 0}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:19px;box-shadow:0 12px 30px rgba(0,0,0,.16)}.card h3,.card h4{margin-top:0}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(165px,100%),1fr));gap:14px;margin:23px 0;max-width:100%;overflow:hidden;align-items:start}.art-grid figure{margin:0;min-width:0;width:100%;max-width:245px;justify-self:center;border:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}.art-grid img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:488/680;object-fit:contain;background:#081012}.art-grid figcaption{padding:9px 11px;color:var(--muted);font-size:.78rem;text-align:center}
+.deck{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;margin:17px 0}
+.deck summary{cursor:pointer;list-style:none;padding:17px 19px;display:flex;justify-content:space-between;gap:18px;align-items:center;background:linear-gradient(90deg,rgba(105,196,204,.09),rgba(207,157,91,.06))}
+.deck summary::-webkit-details-marker{display:none}.deck summary strong{font-family:Georgia,serif;font-size:1.12rem}.deck summary small{display:block;color:var(--muted);margin-top:3px}
+.plus{font-size:1.5rem;color:var(--bronze);transition:.2s}.deck[open] .plus{transform:rotate(45deg)}
+.deck-body{padding:0 19px 19px}.deck-meta{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin:16px 0}
+.copy{border:1px solid #527079;border-radius:9px;background:#193238;color:#fff;padding:8px 11px;font-weight:750;cursor:pointer}.copy:hover{background:#24464e}
+.deck-columns{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#060d0e}
+.deck-col{padding:18px}.deck-col+.deck-col{border-left:1px solid var(--line)}
+.group{margin-bottom:18px}.group h4{font:800 .76rem/1.2 Inter,sans-serif;text-transform:uppercase;letter-spacing:.11em;color:var(--bronze);margin:0 0 8px}
+.row{padding:3px 0;border-bottom:1px dotted rgba(255,255,255,.08)}.qty{display:inline-block;min-width:1.45em;color:var(--cyan);font-variant-numeric:tabular-nums}
+.card-name{border-bottom:1px dotted rgba(255,255,255,.35);cursor:help;outline:none}.card-name:hover,.card-name:focus{color:white;border-color:var(--bronze)}
+.table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);margin:20px 0}
+table{border-collapse:collapse;width:100%;min-width:760px;background:var(--panel)}th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#173038;text-transform:uppercase;letter-spacing:.07em;font-size:.75rem}
+.list-clean{padding-left:1.2em}.list-clean li{margin:.55em 0}
+#preview{position:fixed;z-index:9999;width:min(305px,72vw);opacity:0;pointer-events:none;transform:translateY(6px) scale(.98);transition:.12s;filter:drop-shadow(0 18px 30px rgba(0,0,0,.65))}
+#preview.show{opacity:1;transform:translateY(0) scale(1)}#preview img{width:100%;max-height:88vh;object-fit:contain;border-radius:4.8%;background:#111}
+.footer{border-top:1px solid var(--line);padding:28px 18px 45px;text-align:center;color:var(--muted);font-size:.84rem}
+.searchbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:20px 0}.searchbar input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#081113;color:white;font:inherit}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.archetype-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.16)}.archetype-card:hover{transform:translateY(-2px);border-color:#5d7a81}.archetype-art{height:150px;background-position:center;background-size:cover;position:relative}.archetype-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--panel),transparent 65%)}.archetype-copy{padding:17px}.archetype-copy h3{margin:0 0 6px}.tag{color:var(--bronze);text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:800}
+@media(max-width:930px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:1fr}}
+@media(max-width:650px){body{font-size:16px}.hero{min-height:64vh}.hero-inner,.wrap,.layout{width:min(100% - 24px,var(--max))}.grid2,.cards,.deck-columns{grid-template-columns:1fr}.deck-col+.deck-col{border-left:0;border-top:1px solid var(--line)}.art-grid{grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr));gap:10px}.art-grid figure{max-width:220px}.deck-meta{flex-direction:column}#preview{width:min(280px,78vw);left:50%!important;top:50%!important;transform:translate(-50%,-46%) scale(.98)}#preview.show{transform:translate(-50%,-50%) scale(1)}}
+
+.lead{font-size:1.16rem;color:#dce7e3}.dropcap:first-letter{float:left;font-family:Georgia,serif;font-size:4.2rem;line-height:.78;padding:.12em .12em 0 0;color:var(--bronze)}
+.design-grid,.phase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}.design-grid .card,.phase-grid .card{height:100%}
+.timeline{position:relative;margin:28px 0;padding-left:29px}.timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--bronze),var(--green))}.event{position:relative;margin:0 0 26px}.event:before{content:"";position:absolute;left:-28px;top:.5em;width:13px;height:13px;border:3px solid var(--bronze);background:var(--bg);border-radius:50%}.date{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:850;color:var(--bronze)}
+.split-list{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:20px 0}.good{border-left:4px solid var(--green)}.bad{border-left:4px solid var(--red)}
+.numbered{counter-reset:item;display:grid;gap:13px;margin:20px 0}.numbered .card{position:relative;padding-left:58px}.numbered .card:before{counter-increment:item;content:counter(item);position:absolute;left:18px;top:17px;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:rgba(207,157,91,.15);color:var(--bronze);font-weight:900}
+.role{display:inline-block;padding:3px 8px;border-radius:999px;background:rgba(105,196,204,.12);color:#bcebf0;font-size:.73rem;font-weight:800;white-space:nowrap}.source-list{padding-left:1.25em}.source-list li{margin:.75em 0}.source-list span{display:block;color:var(--muted);font-size:.88rem}.recommend{border-left-color:var(--green)}
+@media(max-width:700px){.design-grid,.phase-grid,.split-list{grid-template-columns:1fr}}
+.toc a.active{background:var(--panel2);color:white}</style></head><body>
+<header class="hero" style="--hero:url('https://api.scryfall.com/cards/named?exact=March%20of%20the%20Machines&format=image&version=art_crop')"><div class="hero-inner"><a class="archive-link" href="index.html">← World Between Worlds 2004 Archive</a><div class="eyebrow">Long-form archetype dossier · September 2004 Standard</div><h1>Blue-Red March–Obliterate</h1><p class="dek">Turn artifact lands into liabilities, preserve indestructible mana through Obliterate, and let the surviving Darksteel Ingots become the win condition.</p><div class="meta"><span class="pill">Control / Combo</span><span class="pill">Onslaught–Fifth Dawn Standard</span><span class="pill">Period decklists and rules</span></div></div></header>
+<div class="layout"><nav class="toc"><strong>Table of contents</strong><a href="#scope">Scope of this guide</a><a href="#identity">1. Cover and deck identity</a><a href="#what-it-does">2. What this deck does</a><a href="#history">3. History and evolution</a><a href="#decklists">4. Historical decklists and recommended 75</a><a href="#mulligans">5. Mulligans and opening turns</a><a href="#interactions">6. Key interactions</a><a href="#piloting">7. How to pilot the deck</a><a href="#sideboarding">8. Sideboarding principles</a><a href="#matchups">9. Gauntlet-specific matchup guide</a><a href="#sources">10. Historical notes and sources</a></nav><main>
+<section id="scope"><div class="callout"><b>Scope.</b> This dossier covers the U/R March of the Machines control family represented by three 5–1 Worlds lists, including Future Sight/Thirst and Concentrate-heavy branches.</div></section>
+<section id="identity"><div class="eyebrow">1 · Cover and deck identity</div><h2>Blue-Red March–Obliterate</h2><p class="lead dropcap">U/R March is a control deck whose lock is embedded in a rules interaction. March of the Machines animates artifacts; Darksteel Ingot becomes an indestructible 3/3; Obliterate destroys lands, creatures, and ordinary artifacts but cannot destroy the Ingot. The opponent is reset to nothing while the Ingot attacks.</p><p class="lead ">March is also maindeck Affinity hate. Artifact lands have mana value zero, so March turns them into 0/0 artifact creatures that are put into the graveyard. This gives the namesake enchantment both a fair control function and a combo finish.</p><div class="design-grid"><div class="card"><h3>A win condition that is also hate</h3><p>March attacks artifact lands and mana while enabling the post-Obliterate kill.</p></div><div class="card"><h3>Indestructible infrastructure</h3><p>Darksteel Ingot fixes mana, survives Obliterate, and becomes the creature that wins.</p></div><div class="card"><h3>Broad cheap interaction</h3><p>Burn, Pyroclasm, Echoing Truth, Annul, Mana Leak, and Condescend cover different engines.</p></div><div class="card"><h3>Slow inevitability from unusual cards</h3><p>Future Sight or Concentrate supplies the cards needed to assemble a seven/eight-mana reset safely.</p></div></div><div class="art-grid"><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=March%20of%20the%20Machines&format=image&version=normal" alt="March of the Machines"><figcaption><b>March of the Machines</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Darksteel%20Ingot&format=image&version=normal" alt="Darksteel Ingot"><figcaption><b>Darksteel Ingot</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Obliterate&format=image&version=normal" alt="Obliterate"><figcaption><b>Obliterate</b></figcaption></figure><figure><img loading="lazy" src="https://api.scryfall.com/cards/named?exact=Future%20Sight&format=image&version=normal" alt="Future Sight"><figcaption><b>Future Sight</b></figcaption></figure></div></section>
+<section id="what-it-does"><div class="eyebrow">2 · What this deck does</div><h2>The strategic machine</h2><div class="phase-grid"><div class="card"><h3>Turns 1–3: answer tempo</h3><p>Burn creatures, Pyroclasm wide boards, Annul artifact engines, and use Serum Visions to hit land drops.</p></div><div class="card"><h3>Turns 3–5: establish indestructible mana</h3><p>Resolve Darksteel Ingot while preserving enough interaction to avoid losing initiative.</p></div><div class="card"><h3>Turns 4–7: deploy March selectively</h3><p>Against Affinity, March may immediately destroy artifact lands. Against control, it may be held until Obliterate is ready.</p></div><div class="card"><h3>Endgame: reset asymmetrically</h3><p>Resolve Obliterate with March and Ingot in place, then attack with the surviving 3/3 artifacts.</p></div></div></section>
+<section id="history"><div class="eyebrow">3 · History and evolution</div><h2>How the archetype reached Worlds</h2><div class="timeline"><div class="event"><div class="date">Mirrodin 2003</div><h3>March of the Machines enters an artifact block</h3><p>The enchantment is initially a build-around and a peculiar answer to artifact lands.</p></div><div class="event"><div class="date">Darksteel 2004</div><h3>Indestructible artifacts complete the lock</h3><p>Darksteel Ingot can survive mass artifact destruction and become a creature under March.</p></div><div class="event"><div class="date">Eighth Edition interaction</div><h3>Obliterate supplies the asymmetric reset</h3><p>Because Obliterate does not destroy enchantments and cannot destroy indestructible Ingot, the board rebuild is one-sided.</p></div><div class="event"><div class="date">Fifth Dawn summer</div><h3>Selection and counters improve</h3><p>Serum Visions and Condescend increase consistency in a deck that must hit lands, interaction, and a multi-card engine.</p></div><div class="event"><div class="date">Worlds 2004</div><h3>Three pilots post 5–1 records</h3><p>Marco Blume, Lars Dam, and Craig Krempels register distinct but clearly related configurations.</p></div><div class="event"><div class="date">After rotation</div><h3>The metagame moves away</h3><p>The core cards remain for a time, but the removal of Onslaught threats and arrival of Kamigawa produces different blue-red control priorities.</p></div></div></section>
+<section id="decklists"><div class="eyebrow">4 · Historical decklists and recommended 75</div><h2>Registered tournament lists</h2><div class="callout recommend"><b>Recommended gauntlet configuration.</b> Marco Blume’s list is the most engine-focused default, with Future Sight and Thirst for Knowledge. Lars Dam’s version is preferable for a slower control mirror environment.</div><p>Select or tap any card name for a full-card preview. Each registered 75 can be copied independently.</p><details class="deck" open>
+ <summary><span><strong>Marco Blume — Blue-Red March of the Machines</strong><small>5–1 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>March turned indestructible Darksteel Ingots into creatures after Obliterate erased everything else.</p>
+  <div class="deck-meta"><div><b>Marco Blume</b><div class="small">5–1 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-0">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Spells · 36</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Serum Visions">Serum Visions</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="March of the Machines">March of the Machines</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Future Sight">Future Sight</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Thirst for Knowledge">Thirst for Knowledge</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Mana Leak">Mana Leak</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Echoing Truth">Echoing Truth</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Obliterate">Obliterate</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Pyroclasm">Pyroclasm</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Shock">Shock</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Darksteel Ingot">Darksteel Ingot</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div></div><div class="group"><h4>Lands · 24</h4><div class="row"><span class="qty">10</span><span class="card-name" tabindex="0" data-card="Mountain">Mountain</span></div><div class="row"><span class="qty">14</span><span class="card-name" tabindex="0" data-card="Island">Island</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Shock">Shock</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Arc-Slogger">Arc-Slogger</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Shatter">Shatter</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Last Word">Last Word</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Future Sight">Future Sight</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Brain Freeze">Brain Freeze</span></div></div></div></div>
+  <pre id="deck-0" hidden>Marco Blume — Blue-Red March of the Machines
+5–1 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Spells · 36
+4 Serum Visions
+4 March of the Machines
+2 Future Sight
+2 Thirst for Knowledge
+3 Mana Leak
+3 Echoing Truth
+4 Electrostatic Bolt
+2 Obliterate
+4 Pyroclasm
+2 Shock
+4 Darksteel Ingot
+2 Annul
+
+Lands · 24
+10 Mountain
+14 Island
+
+Sideboard · 15
+2 Annul
+2 Shock
+3 Arc-Slogger
+3 Shatter
+3 Last Word
+1 Future Sight
+1 Brain Freeze</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Lars Dam — Blue-Red March–Obliterate</strong><small>5–1 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>A slower control branch with Concentrate, more Obliterates, and Dwarven Blastminer after sideboarding.</p>
+  <div class="deck-meta"><div><b>Lars Dam</b><div class="small">5–1 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-1">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Spells · 37</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Magma Jet">Magma Jet</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Slice and Dice">Slice and Dice</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Obliterate">Obliterate</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="March of the Machines">March of the Machines</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Mana Leak">Mana Leak</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Last Word">Last Word</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Darksteel Ingot">Darksteel Ingot</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Serum Visions">Serum Visions</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Concentrate">Concentrate</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Condescend">Condescend</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div></div><div class="group"><h4>Lands · 23</h4><div class="row"><span class="qty">9</span><span class="card-name" tabindex="0" data-card="Mountain">Mountain</span></div><div class="row"><span class="qty">14</span><span class="card-name" tabindex="0" data-card="Island">Island</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Millstone">Millstone</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Dwarven Blastminer">Dwarven Blastminer</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Echoing Truth">Echoing Truth</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Slice and Dice">Slice and Dice</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Last Word">Last Word</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Bribery">Bribery</span></div></div></div></div>
+  <pre id="deck-1" hidden>Lars Dam — Blue-Red March–Obliterate
+5–1 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Spells · 37
+3 Magma Jet
+3 Electrostatic Bolt
+2 Slice and Dice
+3 Obliterate
+4 March of the Machines
+4 Mana Leak
+2 Last Word
+4 Darksteel Ingot
+4 Serum Visions
+4 Concentrate
+2 Condescend
+2 Annul
+
+Lands · 23
+9 Mountain
+14 Island
+
+Sideboard · 15
+2 Millstone
+4 Dwarven Blastminer
+2 Annul
+2 Echoing Truth
+1 Slice and Dice
+1 Electrostatic Bolt
+1 Last Word
+2 Bribery</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details>
+<details class="deck" >
+ <summary><span><strong>Craig Krempels — Blue-Red March of the Machines</strong><small>5–1 Standard day · 2004 World Championships, San Francisco</small></span><span class="plus">+</span></summary>
+ <div class="deck-body">
+  <p>Another successful version of the same control-combo engine, tuned heavily for artifact and control mirrors.</p>
+  <div class="deck-meta"><div><b>Craig Krempels</b><div class="small">5–1 Standard day · September 1, 2004</div></div><button class="copy" data-target="deck-2">Copy decklist</button></div>
+  <div class="deck-columns"><div class="deck-col"><div class="group"><h4>Spells · 36</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Electrostatic Bolt">Electrostatic Bolt</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Pyroclasm">Pyroclasm</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Obliterate">Obliterate</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Condescend">Condescend</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Mana Leak">Mana Leak</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Serum Visions">Serum Visions</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Echoing Truth">Echoing Truth</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="March of the Machines">March of the Machines</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Future Sight">Future Sight</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Thirst for Knowledge">Thirst for Knowledge</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Darksteel Ingot">Darksteel Ingot</span></div></div><div class="group"><h4>Lands · 24</h4><div class="row"><span class="qty">10</span><span class="card-name" tabindex="0" data-card="Mountain">Mountain</span></div><div class="row"><span class="qty">14</span><span class="card-name" tabindex="0" data-card="Island">Island</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Arc-Slogger">Arc-Slogger</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Shatter">Shatter</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Shock">Shock</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Last Word">Last Word</span></div></div></div></div>
+  <pre id="deck-2" hidden>Craig Krempels — Blue-Red March of the Machines
+5–1 Standard day — 2004 World Championships, San Francisco (September 1, 2004)
+
+Spells · 36
+4 Electrostatic Bolt
+4 Pyroclasm
+2 Obliterate
+3 Condescend
+4 Mana Leak
+4 Serum Visions
+3 Echoing Truth
+4 March of the Machines
+2 Future Sight
+2 Thirst for Knowledge
+4 Darksteel Ingot
+
+Lands · 24
+10 Mountain
+14 Island
+
+Sideboard · 15
+3 Arc-Slogger
+3 Shatter
+2 Shock
+4 Annul
+3 Last Word</pre>
+  <p class="small">Source: <a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">historical deck record</a></p>
+ </div>
+</details><h3>Canadian Nationals champion</h3><p>Jingpeng Zhang’s white-heavy Obliterate March branch won the first major post-ban national event.</p><details class="deck" ><summary><span><strong>Jingpeng Zhang — Obliterate March</strong><small>1st place · Canadian Nationals 2004</small></span><span class="plus">+</span></summary><div class="deck-body"><p>Zhang won Canadian Nationals with a white-heavy March shell that paired indestructible mana artifacts with Obliterate and Wrath of God.</p><div class="deck-meta"><div><b>Jingpeng Zhang</b><div class="small">July 2, 2004 · 60-card main deck + 15-card sideboard</div></div><button class="copy" data-target="ur-march-canada">Copy decklist</button></div><div class="deck-columns"><div class="deck-col"><div class="group"><h4>Spells · 40</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Condescend">Condescend</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Echoing Truth">Echoing Truth</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Mana Leak">Mana Leak</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Obliterate">Obliterate</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Pulse of the Fields">Pulse of the Fields</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Serum Visions">Serum Visions</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Thirst for Knowledge">Thirst for Knowledge</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Wrath of God">Wrath of God</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Darksteel Ingot">Darksteel Ingot</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Darksteel Pendant">Darksteel Pendant</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="March of the Machines">March of the Machines</span></div><div class="row"><span class="qty">1</span><span class="card-name" tabindex="0" data-card="Talisman of Indulgence">Talisman of Indulgence</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Talisman of Progress">Talisman of Progress</span></div></div><div class="group"><h4>Lands · 20</h4><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Flooded Strand">Flooded Strand</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Grand Coliseum">Grand Coliseum</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Island">Island</span></div><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Mirrodin&#x27;s Core">Mirrodin&#x27;s Core</span></div><div class="row"><span class="qty">5</span><span class="card-name" tabindex="0" data-card="Plains">Plains</span></div></div></div><div class="deck-col"><div class="group"><h4>Sideboard · 15</h4><div class="row"><span class="qty">3</span><span class="card-name" tabindex="0" data-card="Annul">Annul</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Cabal Interrogator">Cabal Interrogator</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Mycosynth Lattice">Mycosynth Lattice</span></div><div class="row"><span class="qty">4</span><span class="card-name" tabindex="0" data-card="Pyroclasm">Pyroclasm</span></div><div class="row"><span class="qty">2</span><span class="card-name" tabindex="0" data-card="Stifle">Stifle</span></div></div></div></div><pre id="ur-march-canada" hidden>Jingpeng Zhang — Obliterate March
+1st place · Canadian Nationals 2004 · July 2, 2004
+
+Spells · 40
+4 Condescend
+2 Echoing Truth
+4 Mana Leak
+2 Obliterate
+2 Pulse of the Fields
+2 Serum Visions
+4 Thirst for Knowledge
+4 Wrath of God
+4 Darksteel Ingot
+4 Darksteel Pendant
+4 March of the Machines
+1 Talisman of Indulgence
+3 Talisman of Progress
+
+Lands · 20
+4 Flooded Strand
+4 Grand Coliseum
+4 Island
+3 Mirrodin&#x27;s Core
+5 Plains
+
+Sideboard · 15
+3 Annul
+4 Cabal Interrogator
+2 Mycosynth Lattice
+4 Pyroclasm
+2 Stifle</pre><p class="small">Source: <a href="https://www.mtgtop8.com/event?e=54041&amp;f=ST">historical deck record</a></p></div></details></section>
+<section id="mulligans"><div class="eyebrow">5 · Mulligans and opening turns</div><h2>Keep a plan, not a collection of powerful cards</h2><div class="split-list"><div class="card good"><h3>Strong keeps</h3><ul><li>Three lands with both colors, early interaction, and either Ingot or card selection.</li><li>Two lands plus Serum Visions and cheap counters/burn when the curve is functional.</li><li>Against Affinity, Pyroclasm, Electrostatic Bolt, Annul, or March with enough mana to cast them.</li><li>Against control, Ingot plus card draw and a permission spell.</li></ul></div><div class="card bad"><h3>Common mulligans</h3><ul><li>Hands containing March and Obliterate but no early defense.</li><li>Two-Mountain or two-Island hands that cannot cast the other half of the deck.</li><li>Expensive draw spells without enough lands or Serum Visions.</li><li>Against Affinity, hands whose first play is Darksteel Ingot.</li></ul></div></div><h3>Opening-turn priorities</h3><div class="table-wrap"><table><thead><tr><th>Context</th><th>Preferred sequence</th></tr></thead><tbody><tr><td><b>Affinity</b></td><td>Use Bolt/Pyroclasm/Annul first. March on turn four may erase artifact lands, but only if life total survives.</td></tr><tr><td><b>Control</b></td><td>Develop Ingot and card draw; avoid exposing March to enchantment removal long before Obliterate.</td></tr><tr><td><b>Tooth and Nail</b></td><td>Counter Scrying/Reap when it constrains Tron, then use Obliterate before Mindslaver or Tooth becomes decisive.</td></tr><tr><td><b>Unknown</b></td><td>Serum Visions prioritizes the fourth land and a mix of interaction plus engine, not simply the most powerful card.</td></tr></tbody></table></div></section>
+<section id="interactions"><div class="eyebrow">6 · Key interactions</div><h2>Rules and sequencing that define the deck</h2><div class="grid2"><div class="card"><p>March of the Machines makes each noncreature artifact a creature with power and toughness equal to mana value.</p></div><div class="card"><p>Artifact lands have mana value zero, so under March they become 0/0 creatures and are put into the graveyard.</p></div><div class="card"><p>Darksteel Ingot becomes a 3/3 indestructible artifact creature and can still tap for mana if it is untapped.</p></div><div class="card"><p>Obliterate cannot be countered and destroys artifacts, creatures, and lands; it does not destroy enchantments, and indestructible Ingot survives.</p></div><div class="card"><p>If March leaves the battlefield after Obliterate, surviving Ingots stop being creatures but remain mana sources for rebuilding.</p></div><div class="card"><p>Echoing Truth can return multiple permanents with the same name, including token swarms or repeated artifact lands after animation.</p></div><div class="card"><p>Future Sight allows lands and spells to be played from the top, but information and sequencing become public and must be managed carefully.</p></div></div></section>
+<section id="piloting"><div class="eyebrow">7 · How to pilot the deck</div><h2>Decision rules for real games</h2><div class="numbered"><div class="card"><p>Do not treat March as a card that must wait for Obliterate. Against Affinity, destroying several artifact lands may be the entire game.</p></div><div class="card"><p>Conversely, do not cast March into a board where animating opposing artifacts creates lethal attackers without an immediate sweep.</p></div><div class="card"><p>Darksteel Ingot is the deck’s most important permanent. It fixes colors, accelerates, survives the reset, and becomes the clock.</p></div><div class="card"><p>Use counters on engine cards—Tooth, Ironworks, Slide, Plating—not on every creature that burn can answer.</p></div><div class="card"><p>Plan the Obliterate turn several turns ahead: life total, cards in hand, surviving Ingots, and the opponent’s non-destroyed enchantments all matter.</p></div><div class="card"><p>After Obliterate, attack while rebuilding mana. The lock is not infinite; a slow clock gives the opponent time to draw lands and answers.</p></div><div class="card"><p>Future Sight versions should clear unwanted top cards with Serum Visions or other draw before passing priority unnecessarily.</p></div></div></section>
+<section id="sideboarding"><div class="eyebrow">8 · Sideboarding principles</div><h2>Change roles without dismantling the engine</h2><div class="grid2"><div class="card"><p>Arc-Slogger transforms the deck into a more conventional control strategy when opponents overload on enchantment or combo hate.</p></div><div class="card"><p>Shatter and additional Annul increase artifact interaction without depending entirely on March.</p></div><div class="card"><p>Last Word improves control and combo fights where resolving March, Future Sight, or a counter war is decisive.</p></div><div class="card"><p>Bribery is a high-impact answer to Tooth and other large-creature decks, but should not replace the core mana plan.</p></div><div class="card"><p>Dwarven Blastminer and Millstone in the Dam list attack slow mana and control mirrors from different angles.</p></div></div><h3>Typical role shifts</h3><div class="table-wrap"><table><thead><tr><th>Opponent</th><th>Your role</th><th>Sideboard plan</th></tr></thead><tbody><tr><td><b>Affinity</b></td><td><span class="role">Artifact control</span></td><td>Bring Shatter/Annul/Slogger; trim the slowest card draw or excess Obliterate.</td></tr><tr><td><b>Astral Slide</b></td><td><span class="role">Control-combo</span></td><td>Bring Slogger/Last Word; trim Pyroclasm and some cheap burn.</td></tr><tr><td><b>Tooth and Nail</b></td><td><span class="role">Permission-control</span></td><td>Bring Bribery/Last Word/Blastminer; trim creature sweepers.</td></tr><tr><td><b>U/W Control</b></td><td><span class="role">Threat-diverse control</span></td><td>Bring Slogger, Last Word, Millstone; trim Pyroclasm and excess Bolt.</td></tr></tbody></table></div></section>
+<section id="matchups"><div class="eyebrow">9 · Gauntlet-specific matchup guide</div><h2>The Worlds 2004 field</h2><div class="table-wrap"><table><thead><tr><th>Matchup</th><th>Role</th><th>Bring in / prioritize</th><th>Trim</th><th>Plan</th></tr></thead><tbody><tr><td><b>Affinity</b></td><td><span class="role">Control</span></td><td>Shatter, Annul, Arc-Slogger</td><td>Extra Obliterate, slow draw</td><td>March kills artifact lands, but cast it only when the remaining creatures cannot kill you. Pyroclasm handles the nonland board.</td></tr><tr><td><b>Astral Slide</b></td><td><span class="role">Control-combo</span></td><td>Last Word, Slogger</td><td>Pyroclasm, some Bolt</td><td>Protect March/Obliterate, pressure with Slogger, and avoid losing Future Sight to Vengeance without value.</td></tr><tr><td><b>Tooth and Nail</b></td><td><span class="role">Permission</span></td><td>Bribery, Last Word, Blastminer</td><td>Pyroclasm, creature burn</td><td>Counter mana tutors selectively and keep Tooth/Mindslaver from resolving before Obliterate resets Tron.</td></tr><tr><td><b>U/W Control</b></td><td><span class="role">Control</span></td><td>Last Word, Slogger, Millstone</td><td>Pyroclasm, Electrostatic Bolt</td><td>Ingot gives mana resilience; diversify threats so Annul and Wrath do not answer the same plan.</td></tr><tr><td><b>Goblins</b></td><td><span class="role">Hard control</span></td><td>Slogger, extra burn</td><td>Slow counters or Future Sight</td><td>Pyroclasm is the key card, but Warchief haste means leaving shields down can still be lethal.</td></tr><tr><td><b>KCI / Incubator</b></td><td><span class="role">Permission-control</span></td><td>Annul, Shatter, Last Word</td><td>Some creature burn</td><td>Counter or bounce Ironworks/Incubator, then establish March or a fast Slogger clock.</td></tr></tbody></table></div></section>
+<section id="sources"><div class="eyebrow">10 · Historical notes and sources</div><h2>What the archetype teaches</h2><p class="lead">U/R March is the most visibly “designed” deck in the Worlds field: its mana rock, hate card, lock piece, and win condition are different roles of the same permanents. The deck rewards understanding state-based actions and asymmetric resets.</p><h3>Historical sources</h3><ol class="source-list"><li><a href="https://polter.pl/Top20-pierwszego-dnia-Mistrzostw-Swiata-2004-T2-c3292">Worlds 2004 Standard day-one leaders</a><span>The published 6–0 and 5–1 Standard lists used throughout this archive.</span></li><li><a href="https://mtgtop8.com/event?e=9243&amp;f=ST">Worlds 2004 event record</a><span>Event size, Top 8, archetype labels, and undefeated Standard decks.</span></li><li><a href="https://articles.starcitygames.com/articles/tribal-thriftiness-56-the-endless-march/">Tribal Thriftiness: The Endless March</a><span>Retrospective explanation of the original Standard March/indestructible-artifact deck.</span></li><li><a href="https://articles.starcitygames.com/articles/blog-fanatic-u-r-control-affinity-and-everything-else-you-could-possibly-want-to-know-about-block-constructed/">Blog Fanatic: U/R Control and Affinity</a><span>Contemporary U/R control positioning against Affinity, Tooth, Ironworks, and Big Red.</span></li><li><a href="https://articles.starcitygames.com/articles/notes-from-grand-prix-nagoya-2004/">Notes from Grand Prix Nagoya 2004</a><span>Immediate pre-Worlds metagame context.</span></li></ol><p class="note">Decklists are reproduced as tournament data. Historical development is synthesized from contemporary articles and event records; strategic guidance is retrospective and written for a playable historical gauntlet.</p></section>
+</main></div><div id="preview"><img alt=""></div><footer class="footer">Worlds 2004 Standard Archive · Independent historical project. Magic cards and artwork © Wizards of the Coast.</footer><script>
+const preview=document.getElementById('preview'), pimg=preview.querySelector('img');let pinned=false;
+function imgURL(n){return 'https://api.scryfall.com/cards/named?exact='+encodeURIComponent(n)+'&format=image&version=normal'}
+function place(x,y){if(matchMedia('(max-width:650px)').matches){preview.style.left='50%';preview.style.top='50%';return}
+ const pad=14,w=preview.offsetWidth||305,h=preview.offsetHeight||425;let l=x+18,t=y+18;
+ if(l+w>innerWidth-pad)l=x-w-18;if(t+h>innerHeight-pad)t=innerHeight-h-pad;
+ l=Math.max(pad,Math.min(l,innerWidth-w-pad));t=Math.max(pad,Math.min(t,innerHeight-h-pad));
+ preview.style.left=l+'px';preview.style.top=t+'px'}
+function show(el,x,y,p=false){pimg.src=imgURL(el.dataset.card);pimg.alt=el.dataset.card;preview.classList.add('show');place(x,y);pinned=p}
+function hide(){if(!pinned)preview.classList.remove('show')}
+document.querySelectorAll('.card-name').forEach(el=>{
+ el.addEventListener('mouseenter',e=>show(el,e.clientX,e.clientY));el.addEventListener('mousemove',e=>place(e.clientX,e.clientY));el.addEventListener('mouseleave',hide);
+ el.addEventListener('focus',()=>{const r=el.getBoundingClientRect();show(el,r.right,r.top)});el.addEventListener('blur',hide);
+ el.addEventListener('click',e=>{if(matchMedia('(hover:none)').matches){e.preventDefault();show(el,innerWidth/2,innerHeight/3,true)}})
+});
+document.addEventListener('click',e=>{if(pinned&&!e.target.closest('.card-name')){pinned=false;preview.classList.remove('show')}});
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{const t=document.getElementById(b.dataset.target).textContent;
+ try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
+ const o=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=o,1200)}));
+
+const dossierSections=[...document.querySelectorAll('main section[id]')], tocLinks=[...document.querySelectorAll('.toc a')];
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tocLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-15% 0px -72% 0px'});dossierSections.forEach(s=>obs.observe(s));}
+</script></body></html>

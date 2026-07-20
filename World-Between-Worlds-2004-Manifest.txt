@@ -1,0 +1,49 @@
+World Between Worlds 2004
+
+Standard historical scope: immediately after Worlds 2003 through Worlds 2004
+Theme: a small Star Wars-inspired naming nod
+
+Site files:
+README.txt
+affinity-evolution.html
+affinity.html
+astral-slide.html
+big-red.html
+clamp-goblins.html
+death-cloud.html
+elf-and-nail.html
+era-berlin-aftermath.html
+era-early-mirrodin.html
+era-skullclamp.html
+era-worlds.html
+event-canada-nationals.html
+event-france-nationals.html
+event-gp-brussels.html
+event-gp-kuala-lumpur.html
+event-gp-nagoya.html
+event-guide.html
+event-regionals-2004.html
+event-us-nationals.html
+event-worlds-2003.html
+format-guide.html
+gauntlet-guide.html
+goblin-bidding.html
+goblins.html
+gw-control.html
+index.html
+kci-incubator.html
+march-worship.html
+metagame-guide.html
+proteus-control.html
+reanimator-2003.html
+red-land-destruction.html
+rg-beasts.html
+road-to-worlds.html
+skullclamp-history.html
+tooth-and-nail.html
+ug-madness.html
+ur-march.html
+uw-control.html
+wake.html
+year-gauntlet.html
+year-overview.html
