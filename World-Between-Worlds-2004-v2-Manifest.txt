@@ -1,0 +1,10 @@
+World Between Worlds 2004 — v2 Image URL Repair
+
+Repair summary:
+- Fixed Worlds Berlin / Mirari's Wake image references
+- Fixed French Nationals / Patriarch's Bidding image references
+- Normalized all Scryfall CSS background URLs to punctuation-safe unquoted url(...) syntax
+- Updated event-page heroes and landing-page event cards
+
+HTML files updated: 42
+CSS image URLs normalized: 58
