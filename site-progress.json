@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "project": "MTG-World-Between-Worlds-2004",
+  "asOf": "2026-10-26",
+  "revision": "v2",
+  "progress": {
+    "label": "v2 published archive image repairs",
+    "completed": 42,
+    "total": 42,
+    "basis": "The accepted v2 manifest records all 42 HTML files updated for the image URL repair.",
+    "note": "100% describes the finite v2 repair scope, not new research."
+  }
+}
